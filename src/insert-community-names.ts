@@ -28,14 +28,13 @@ const songs: Song[] = JSON.parse(fs.readFileSync(songsJsonFile).toString());
 
 // perform insertion
 for (const song of songs) {
-	let key = song.songId;
+	let key = song.zetarakuId;
 
 	// annoying edge case
-	if (song.songId === 'Link') {
+	if (song.zetarakuId === 'Link')
 		key = 'Link (maimai)';
-	} else if (song.songId === 'Link (2)') {
+	else if (song.zetarakuId === 'Link (2)')
 		key = 'Link';
-	}
 
 	const communityNames = song2communityNames[key];
 

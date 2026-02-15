@@ -165,10 +165,9 @@ const findUtageFolderId = (nonUtageName: string, difficulty: string): string | n
 /**
  * Create a Song object from a song entry
  */
-const createSongObject = async ({ title, artist, songId }: ZetarakuSong, folderId: string): Promise<Song> => {
+const createSongObject = async ({ title, artist }: ZetarakuSong, folderId: string): Promise<Song> => {
 	return {
 		folderId,
-		songId,
 		title,
 		artist,
 		...(hasJapanese(title) ? { romanizedTitle: await romanizeJapanese(title) } : {}),

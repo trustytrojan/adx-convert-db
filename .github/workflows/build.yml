@@ -1,0 +1,29 @@
+name: Build song database
+
+on:
+  push:
+    paths-ignore:
+      - .gitignore
+      - '*.md'
+      - songs.json
+      - songs-json.zip
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+
+      - name: Run full workflow
+        run: ./run-all.sh
+
+      - name: Upload songs.json as songs-json.zip
+        uses: actions/upload-artifact@v6
+        with:
+          name: songs-json
+          path: songs.json
+          if-no-files-found: error
