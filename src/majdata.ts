@@ -20,13 +20,15 @@ const majdataRaw = fs.readFileSync(majdataFile).toString();
 const majdataSongs: MajdataSong[] = JSON.parse(majdataRaw);
 const songs: Song[] = JSON.parse(fs.readFileSync(songsJsonFile).toString());
 
-for (const { id, title, artist } of majdataSongs) {
+for (const { id, title, artist, designer } of majdataSongs) {
 	songs.push({
 		majdataId: id,
 		title,
 		artist,
+		designer,
 		...(hasJapanese(title) ? { romanizedTitle: await romanizeJapanese(title) } : {}),
 		...(hasJapanese(artist) ? { romanizedArtist: await romanizeJapanese(artist) } : {}),
+		...(hasJapanese(designer) ? { romanizedDesigner: await romanizeJapanese(designer) } : {}),
 	});
 }
 
