@@ -1,23 +1,7 @@
 import fs from 'node:fs';
 import { hasJapanese, romanizeJapanese } from './romanize-jp.ts';
 import { songName2FolderIdFile, zetarakuJsonFile, songsJsonFile } from './shared.ts';
-
-// Types and interfaces
-interface Song {
-	folderId: string;
-	songId: string;
-	title: string;
-	artist: string;
-	romanizedTitle?: string;
-	romanizedArtist?: string;
-}
-
-interface ZetarakuSong {
-	songId: string;
-	title: string;
-	artist: string;
-	sheets: Array<{ type: string; difficulty: string }>;
-}
+import { Song, ZetarakuSong } from './types.ts';
 
 const zetarakuJsonUrl = 'https://dp4p6x0xfi5o9.cloudfront.net/maimai/data.json';
 
