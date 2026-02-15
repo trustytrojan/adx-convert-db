@@ -6,11 +6,16 @@ import KuromojiAnalyzer from 'kuroshiro-analyzer-kuromoji';
 const kuroshiro = new Kuroshiro();
 await kuroshiro.init(new KuromojiAnalyzer());
 
-export const romanizeJapanese = (text: string): Promise<string> =>
-	kuroshiro.convert(text, {
+export const romanizeJapanese = async (text: string): Promise<string> => {
+	const converted: string = await kuroshiro.convert(text, {
 		to: 'romaji',
 		romajiSystem: 'passport',
 		mode: 'spaced',
 	});
+
+	// in 'spaced' mode, it will put spaces even around existing spaces.
+	// to negate this without changing the library itself, ensure only one space between words.
+	return converted.replaceAll(/  +/g, ' ');
+}
 
 export const hasJapanese = (text: string): boolean => Kuroshiro.Util.hasJapanese(text);
