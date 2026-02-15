@@ -3,4 +3,6 @@ Collection of Node.js/Deno scripts to construct a link between @zetaraku's maima
 
 To run the workflow, simply run `run-all.sh` on POSIX or `run-all.cmd` on Windows. You're expected to have Deno installed, but you can replace its usage with Node.js if you want (this involves `npm install`'ing the dependencies since there is no `package.json` currently).
 
-The latest "build" of the database is committed to this repository: [songs.json](./songs.json).
+The latest build of the database can be downloaded with the following:
+- [songs.json](./songs.json) or [songs-json.zip](./songs-json.zip) committed to the repository
+- [songs-json.zip](https://nightly.link/trustytrojan/adx-convert-db/workflows/build/main/songs-json.zip) - actions build artifact
