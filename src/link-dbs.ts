@@ -107,7 +107,8 @@ const findNonUtageFolderId = (songId: string, title: string): string | null => {
 
 	// Try exact first, then keys
 	return (
-		songName2folderId[songId]
+		(songId === 'Link (2)' ? songName2folderId['383_Link'] : null)
+ 		|| songName2folderId[songId]
 		|| songName2folderId[title]
 		|| searchFriendlyMap[keySongId]
 		|| searchFriendlyMap[keyTitle]
