@@ -24,7 +24,7 @@ const possiblyUtageRegex = /^[\(\[].[\)\]] ?(.+)$/;
 const utageDifficultyRegex = /^【(.)】$/;
 
 // Difficulty conversion for Wonderland Wars
-const wwdiff2number: Record<string, string> = {
+const wwdiff2number = {
 	EASY: '1',
 	BASIC: '2',
 	ADVANCED: '3',
@@ -126,7 +126,7 @@ const convertToGdriveUtageName = (nonUtageName: string, difficulty: string): str
 		const match = nonUtageName.match(/^Wonderland Wars オープニング \(([A-Za-z:]+)\)$/);
 		if (match) {
 			const diff = match[1];
-			const num = wwdiff2number[diff];
+			const num = wwdiff2number[diff as keyof typeof wwdiff2number];
 			if (num)
 				return `[宴 NO.${num}] Wonderland Wars オープニング`;
 		}
@@ -167,7 +167,7 @@ const findUtageFolderId = (nonUtageName: string, difficulty: string): string | n
  */
 const createSongObject = async ({ title, artist }: ZetarakuSong, folderId: string): Promise<Song> => {
 	return {
-		folderId,
+		id: folderId,
 		title,
 		artist,
 		...(hasJapanese(title) ? { romanizedTitle: await romanizeJapanese(title) } : {}),
