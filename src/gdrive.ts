@@ -38,7 +38,9 @@ export const parseEmbeddedFolderView = (html: string) => {
 	$('.flip-entry').each((_, element) => {
 		let { id } = element.attribs;
 
-		if (!id.startsWith('entry-'))
+		// the entry element ids all start with 'entry-'
+		// all google drive file IDs start with '1'
+		if (!id.startsWith('entry-1'))
 			throw new Error(`malformed .flip-entry id: ${id}`);
 
 		// get rid of 'entry-' at beginning

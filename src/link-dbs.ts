@@ -24,6 +24,10 @@ const zetarakuSongs: ZetarakuSong[] = JSON.parse(fs.readFileSync(zetarakuJsonFil
 const possiblyUtageRegex = /^[\(\[].[\)\]] ?(.+)$/;
 const utageDifficultyRegex = /^【(.)】$/;
 
+// keep specifically utage song names for separate searching
+const possiblyUtage = RegExp.prototype.test.bind(possiblyUtageRegex);
+const utageSongNames = mySongNames.filter(possiblyUtage);
+
 // Difficulty conversion for Wonderland Wars
 const wwdiff2number = {
 	EASY: '1',
@@ -78,17 +82,18 @@ const songLikelyInGdrive = (songId: string, title: string): boolean => {
 	if (keySongId in searchFriendlyMap || keyTitle in searchFriendlyMap)
 		return true;
 
-	// Special case for the math symbol
-	if (title === '∀' && '∀' in songName2folderId)
-		return true;
-
 	return false;
 };
 
+type OptionalString = string | undefined;
+type ThreeOptionalStrings = [OptionalString, OptionalString, OptionalString];
+
 /**
- * Try to find a folderId for a non-utage song
+ * Try to find folderIds for a non-utage song
+ * Plural because there are `[ST]` and `[DX]` variants along with untagged folder names
+ * @returns Exactly 3 `string | undefined`
  */
-const findNonUtageFolderId = (songId: string, title: string): (string | undefined)[] => {
+const findNonUtageFolderIds = (songId: string, title: string): ThreeOptionalStrings => {
 	const keySongId = toSearchKey(songId);
 	const keyTitle = toSearchKey(title);
 
@@ -98,7 +103,6 @@ const findNonUtageFolderId = (songId: string, title: string): (string | undefine
 		|| searchFriendlyMap[keySongId + suffix]
 		|| searchFriendlyMap[keyTitle + suffix];
 
-	// Try exact first, then keys
 	return [
 		searchMappings(),
 		searchMappings(' [DX]'),
@@ -107,50 +111,44 @@ const findNonUtageFolderId = (songId: string, title: string): (string | undefine
 };
 
 /**
- * Try to find a gdrive name for a utage song's non-utage base
+ * Try to find gdrive folder names for a utage song's non-utage base
  */
 const findUtageGdriveName = (nonUtageName: string): (string | undefined)[] =>
-	mySongNames.filter((s) => possiblyUtageRegex.test(s) && s.includes(nonUtageName));
+	utageSongNames.filter((s) => possiblyUtageRegex.test(s) && s.includes(nonUtageName));
 
 /**
  * Convert a non-utage song name to its gdrive utage counterpart
  */
 const convertToGdriveUtageName = (nonUtageName: string, difficulty: string): string | undefined => {
+	let match: RegExpMatchArray | null;
+
 	// Handle "Garakuta Doll Play (1)" -> "[宴 NO.1] Garakuta Doll Play"
-	{
-		const match = nonUtageName.match(/^Garakuta Doll Play \((\d)\)$/);
-		if (match) {
-			const num = match[1];
-			return `[宴 NO.${num}] Garakuta Doll Play`;
-		}
+	if ((match = nonUtageName.match(/^Garakuta Doll Play \((\d)\)$/))) {
+		const num = match[1];
+		return `[宴 NO.${num}] Garakuta Doll Play`;
 	}
 
 	// Handle "Wonderland Wars オープニング (EASY)" -> "[宴 NO.1] Wonderland Wars オープニング"
-	{
-		const match = nonUtageName.match(/^Wonderland Wars オープニング \(([A-Za-z:]+)\)$/);
-		if (match) {
-			const diff = match[1];
-			const num = wwdiff2number[diff as keyof typeof wwdiff2number];
-			if (num)
-				return `[宴 NO.${num}] Wonderland Wars オープニング`;
-		}
+	if ((match = nonUtageName.match(/^Wonderland Wars オープニング \(([A-Za-z:]+)\)$/))) {
+		const diff = match[1];
+		const num = wwdiff2number[diff as keyof typeof wwdiff2number];
+		if (num)
+			return `[宴 NO.${num}] Wonderland Wars オープニング`;
 	}
 
-	// Handle "(宴) Reach For The Stars (2)" -> "[char] Reach For The Stars"
-	{
+	// Handle "(宴) Reach For The Stars (2)" -> "[difficultyChar] Reach For The Stars"
+	if ((match = utageDifficultyRegex.exec(difficulty))) {
+		const difficultyChar = match[1];
 		const rftsName = nonUtageName.replace(/ \(\d\)$/, '');
-		const match = utageDifficultyRegex.exec(difficulty);
-		if (match) {
-			const difficultyChar = match[1];
-			return `[${difficultyChar}] ${rftsName}`;
-		}
+		return `[${difficultyChar}] ${rftsName}`;
 	}
 };
 
 /**
- * Try to find a folderId for a utage song
+ * Try to find folderIds for a utage song
+ * Plural because there are `[1P]`, `[2P]`, `[EASY]`, and `[HARD]` variants
  */
-const findUtageFolderId = (nonUtageName: string, difficulty: string): (string | undefined)[] | undefined => {
+const findUtageFolderIds = (nonUtageName: string, difficulty: string): (string | undefined)[] | undefined => {
 	// First try: find existing gdrive name that includes the non-utage name
 	const gdriveNames = findUtageGdriveName(nonUtageName);
 	if (gdriveNames.length)
@@ -205,7 +203,6 @@ const songs: Song[] = [];
 const notFoundSongIds: string[] = [];
 const notFoundButLikelyNotConverted: string[] = [];
 let utageSongsProcessed = 0;
-let nonUtageSongsProcessed = 0;
 
 for (const songEntry of zetarakuSongs) {
 	const { songId, title, sheets } = songEntry;
@@ -238,7 +235,7 @@ for (const songEntry of zetarakuSongs) {
 		}
 
 		// Try to find the folderId
-		let folderIds = findUtageFolderId(nonUtageName, difficulty || '');
+		let folderIds = findUtageFolderIds(nonUtageName, difficulty || '');
 
 		if (!folderIds?.length) {
 			// In gdrive but couldn't find folderId
@@ -272,7 +269,7 @@ for (const songEntry of zetarakuSongs) {
 		}
 
 		// Try to find the folderId
-		const [folderId, dxFolderId, stFolderId] = findNonUtageFolderId(songId, title);
+		const [folderId, dxFolderId, stFolderId] = findNonUtageFolderIds(songId, title);
 
 		if (!folderId) {
 			// In gdrive but couldn't find folderId
@@ -283,7 +280,6 @@ for (const songEntry of zetarakuSongs) {
 		const addSong = async (folderId: string) => {
 			const songObj = await createSongObject(songEntry, folderId);
 			songs.push(songObj);
-			++nonUtageSongsProcessed;
 		};
 
 		await addSong(folderId);
@@ -310,17 +306,18 @@ console.log('Uncollected EASY converts:', allEzConverts.difference(collectedSong
 console.log('Uncollected HARD converts:', allHdConverts.difference(collectedSongTitles));
 
 // Log results
-console.log(`Total matched songs: ${songs.length}`);
+console.log(`\nTotal matched songs: ${songs.length}`);
 console.log(`Utage songs processed: ${utageSongsProcessed}`);
-console.log(`Non-utage songs processed: ${nonUtageSongsProcessed}`);
+
 if (notFoundSongIds.length > 0) {
-	console.log(`\nzetaraku songIds found in gdrive but **could not match**:`);
+	console.log(`\nzetaraku songIds found in gdrive but could not match:`);
 	for (const songId of notFoundSongIds)
 		console.log(`'${songId}'`);
 	console.log(`\nTotal unmatched: ${notFoundSongIds.length}`);
 }
+
 if (notFoundButLikelyNotConverted.length > 0) {
-	console.log(`\nzetaraku songIds **probably not converted**:`);
+	console.log(`\nzetaraku songIds probably not converted:`);
 	for (const songId of notFoundButLikelyNotConverted)
 		console.log(`'${songId}'`);
 	console.log(`\nTotal unmatched: ${notFoundButLikelyNotConverted.length}`);
