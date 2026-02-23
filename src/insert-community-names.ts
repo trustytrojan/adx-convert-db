@@ -11,6 +11,7 @@ if (!fs.existsSync(communityNamesFile)) {
 	if (!resp.ok)
 		throw new Error(`${communityNamesTsvUrl} -> ${resp.status} ${resp.statusText}`);
 
+	console.log(`Downloaded ${communityNamesFile}`);
 	fs.writeFileSync(communityNamesFile, await resp.text());
 }
 

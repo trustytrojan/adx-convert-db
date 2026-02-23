@@ -4,7 +4,8 @@ because Google Drive's servers don't want to send embeddedfolderview HTML quickl
 */
 
 import fs from 'node:fs';
-import { parseDriveFolders, versionFoldersLocal, songName2FolderIdFile } from './shared.ts';
+import { songName2FolderIdFile, versionFoldersLocal } from './shared.ts';
+import { parseEmbeddedFolderView } from './gdrive.ts';
 
 const songName2folderId: Record<string, string> = Object.create(null);
 
@@ -12,8 +13,9 @@ const versionFolders = fs.readdirSync(versionFoldersLocal);
 
 for (const versionFolder of versionFolders) {
 	const htmlText = fs.readFileSync(`${versionFoldersLocal}/${versionFolder}`).toString();
-	Object.assign(songName2folderId, parseDriveFolders(htmlText));
+	for (const { name, id } of parseEmbeddedFolderView(htmlText))
+		// WE MUST NORMALIZE HERE TO HANDLE JAPANESE ACCENTS SOMETIMES BEING SEPARATE CHARACTERS!!!
+		songName2folderId[name.normalize()] = id;
 }
 
 fs.writeFileSync(songName2FolderIdFile, JSON.stringify(songName2folderId, null, '\t'));
-console.log(`Wrote songName2folderId to: ${songName2FolderIdFile}`);

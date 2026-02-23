@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import { hasJapanese, romanizeJapanese } from './romanize-jp.ts';
-import { songName2FolderIdFile, zetarakuJsonFile, songsJsonFile } from './shared.ts';
+import { songName2FolderIdFile, songsJsonFile, zetarakuJsonFile } from './shared.ts';
 import { Song, ZetarakuSong } from './types.ts';
 
 const zetarakuJsonUrl = 'https://dp4p6x0xfi5o9.cloudfront.net/maimai/data.json';
@@ -11,11 +11,12 @@ if (!fs.existsSync(zetarakuJsonFile)) {
 	if (!r.ok)
 		throw new Error(`${zetarakuJsonUrl} -> ${r.status} ${r.statusText}`);
 	fs.writeFileSync(zetarakuJsonFile, await r.text());
-	console.log(`Downloaded zetaraku.json to: ${zetarakuJsonFile}`);
+	console.log(`Downloaded ${zetarakuJsonFile}`);
 }
 
 // Load data
 const songName2folderId: Record<string, string> = JSON.parse(fs.readFileSync(songName2FolderIdFile).toString());
+const folderId2songName = Object.fromEntries(Object.entries(songName2folderId).map(([a, b]) => [b, a]));
 const mySongNames = Object.keys(songName2folderId);
 const zetarakuSongs: ZetarakuSong[] = JSON.parse(fs.readFileSync(zetarakuJsonFile).toString()).songs;
 
@@ -37,7 +38,8 @@ const wwdiff2number = {
  * Normalize a string to a search-friendly key for matching
  */
 const toSearchKey = (s: string): string =>
-	s.normalize('NFC')
+	// WE MUST NORMALIZE HERE TO HANDLE JAPANESE ACCENTS SOMETIMES BEING SEPARATE CHARACTERS!!!
+	s.normalize()
 		.toLowerCase()
 		.replace(/[！-～]/g, (m) => String.fromCharCode(m.charCodeAt(0) - 0xfee0))
 		// Bridge the Greek/Latin gap for KHYMΞXΛ
@@ -56,6 +58,7 @@ for (const [name, id] of Object.entries(songName2folderId)) {
 	// Hardfix for "Idolratrize" vs "Idoratrize"
 	if (key.includes('idolratrize'))
 		searchFriendlyMap[key.replace('idolratrize', 'idoratrize')] = id;
+
 	// Hardfix for "Plus Danshi" -> "+♂"
 	if (key.includes('plusdanshi'))
 		searchFriendlyMap['♂'] = id;
@@ -85,33 +88,34 @@ const songLikelyInGdrive = (songId: string, title: string): boolean => {
 /**
  * Try to find a folderId for a non-utage song
  */
-const findNonUtageFolderId = (songId: string, title: string): string | null => {
+const findNonUtageFolderId = (songId: string, title: string): (string | undefined)[] => {
 	const keySongId = toSearchKey(songId);
 	const keyTitle = toSearchKey(title);
 
+	const searchMappings = (suffix: string = ''): string | undefined =>
+		songName2folderId[songId + suffix]
+		|| songName2folderId[title + suffix]
+		|| searchFriendlyMap[keySongId + suffix]
+		|| searchFriendlyMap[keyTitle + suffix];
+
 	// Try exact first, then keys
-	return (
-		(songId === 'Link (2)' ? songName2folderId['383_Link'] : null)
- 		|| songName2folderId[songId]
-		|| songName2folderId[title]
-		|| searchFriendlyMap[keySongId]
-		|| searchFriendlyMap[keyTitle]
-		|| (title === '∀' ? songName2folderId['∀'] : null)
-	);
+	return [
+		searchMappings(),
+		searchMappings(' [DX]'),
+		searchMappings(' [ST]'),
+	];
 };
 
 /**
  * Try to find a gdrive name for a utage song's non-utage base
  */
-const findUtageGdriveName = (nonUtageName: string): string | null => {
-	const found = mySongNames.find((s) => s.includes(nonUtageName) && possiblyUtageRegex.test(s));
-	return found ?? null;
-};
+const findUtageGdriveName = (nonUtageName: string): (string | undefined)[] =>
+	mySongNames.filter((s) => possiblyUtageRegex.test(s) && s.includes(nonUtageName));
 
 /**
  * Convert a non-utage song name to its gdrive utage counterpart
  */
-const convertToGdriveUtageName = (nonUtageName: string, difficulty: string): string | null => {
+const convertToGdriveUtageName = (nonUtageName: string, difficulty: string): string | undefined => {
 	// Handle "Garakuta Doll Play (1)" -> "[宴 NO.1] Garakuta Doll Play"
 	{
 		const match = nonUtageName.match(/^Garakuta Doll Play \((\d)\)$/);
@@ -141,37 +145,58 @@ const convertToGdriveUtageName = (nonUtageName: string, difficulty: string): str
 			return `[${difficultyChar}] ${rftsName}`;
 		}
 	}
-
-	return null;
 };
 
 /**
  * Try to find a folderId for a utage song
  */
-const findUtageFolderId = (nonUtageName: string, difficulty: string): string | null => {
+const findUtageFolderId = (nonUtageName: string, difficulty: string): (string | undefined)[] | undefined => {
 	// First try: find existing gdrive name that includes the non-utage name
-	const gdriveName = findUtageGdriveName(nonUtageName);
-	if (gdriveName)
-		return songName2folderId[gdriveName] || null;
+	const gdriveNames = findUtageGdriveName(nonUtageName);
+	if (gdriveNames.length)
+		return gdriveNames.map((n) => n && songName2folderId[n]);
 
 	// Second try: convert to gdrive name using special rules
 	const convertedName = convertToGdriveUtageName(nonUtageName, difficulty);
 	if (convertedName && convertedName in songName2folderId)
-		return songName2folderId[convertedName];
-
-	return null;
+		return [songName2folderId[convertedName]];
 };
 
 /**
- * Create a Song object from a song entry
+ * Create a Song object from using Zetaraku & Google Drive folder data.
  */
-const createSongObject = async ({ title, artist }: ZetarakuSong, folderId: string): Promise<Song> => {
+const createSongObject = async (z: ZetarakuSong, folderId: string): Promise<Song> => {
+	// default to listing all level values
+	let levels = z.sheets.map((s) => s.level);
+
+	const folderName = folderId2songName[folderId];
+	if (!folderName)
+		throw new Error('this is not good!');
+
+	// if zetaraku reports both chart types:
+	if (z.sheets.some((s) => s.type === 'dx') && z.sheets.some((s) => s.type === 'std')) {
+		// if this convert folder is a DX convert:
+		if (folderName.endsWith('[DX]'))
+			levels = z.sheets.filter((s) => s.type === 'dx').map((s) => s.level);
+		else
+			levels = z.sheets.filter((s) => s.type === 'std').map((s) => s.level);
+	}
+
+	// remove duplicates, in case the same designer worked on 2+ sheets
+	const noteDesigners = new Set(z.sheets.map((s) => s.noteDesigner).filter((s) => s && s !== '-'));
+	const designer = noteDesigners.size > 0 && noteDesigners.values().reduce((prev, curr) => `${prev},${curr}`);
+
 	return {
 		id: folderId,
-		title,
-		artist,
-		...(hasJapanese(title) ? { romanizedTitle: await romanizeJapanese(title) } : {}),
-		...(hasJapanese(artist) ? { romanizedArtist: await romanizeJapanese(artist) } : {}),
+		zetarakuId: z.songId,
+		title: folderName,
+		artist: z.artist,
+		...(designer ? { designer } : {}),
+		releaseDate: z.releaseDate,
+		levels,
+		...(hasJapanese(folderName) ? { romanizedTitle: await romanizeJapanese(folderName) } : {}),
+		...(hasJapanese(z.artist) ? { romanizedArtist: await romanizeJapanese(z.artist) } : {}),
+		...(designer && hasJapanese(designer) ? { romanizedDesigner: await romanizeJapanese(designer) } : {}),
 	};
 };
 
@@ -189,17 +214,17 @@ for (const songEntry of zetarakuSongs) {
 
 	if (type === 'utage') {
 		// Utage song handling
-		const match = possiblyUtageRegex.exec(songId);
+
+		// Regex exec on title before songId.
+		// This is a hardcode specifically for "[協]青春コンプレックス" because songId ends
+		// in japanese text that is impossible to match to gdrive folder names.
+		const match = possiblyUtageRegex.exec(title) ?? possiblyUtageRegex.exec(songId);
 		if (!match)
 			continue;
 
-		let nonUtageName = match[1];
+		const nonUtageName = match[1];
 		if (!nonUtageName)
 			continue;
-
-		// Normalize specific character issues
-		if (nonUtageName === "WE'RE BACK!!")
-			nonUtageName = nonUtageName.replace("'", '\u2019');
 
 		// Check if this utage song is likely in our gdrive database
 		// We need to check both the converted names and existing names
@@ -213,15 +238,32 @@ for (const songEntry of zetarakuSongs) {
 		}
 
 		// Try to find the folderId
-		const folderId = findUtageFolderId(nonUtageName, difficulty || '');
-		if (folderId) {
+		let folderIds = findUtageFolderId(nonUtageName, difficulty || '');
+
+		if (!folderIds?.length) {
+			// In gdrive but couldn't find folderId
+			notFoundSongIds.push(songId);
+			continue;
+		}
+
+		// Hardcode specifically for "[協]青春コンプレックス" because gdrive has [EASY] and [HARD] variants
+		if (songId.endsWith('（ヒーロー級）')) {
+			// translates to 'hero class'
+			// filter to HARD charts
+			folderIds = folderIds.filter((id) => id && folderId2songName[id].endsWith('[HARD]'));
+		} else if (songId.endsWith('（入門編）')) {
+			// translates to 'introductory edition'
+			// filter to EASY charts
+			folderIds = folderIds.filter((id) => id && folderId2songName[id].endsWith('[EASY]'));
+		}
+
+		const addSong = async (folderId: string) => {
 			const songObj = await createSongObject(songEntry, folderId);
 			songs.push(songObj);
 			++utageSongsProcessed;
-		} else {
-			// In gdrive but couldn't find folderId
-			notFoundSongIds.push(songId);
-		}
+		};
+
+		folderIds.filter((s) => s !== undefined).map(addSong);
 	} else {
 		// Check if this song is likely in our gdrive database
 		if (!songLikelyInGdrive(songId, title)) {
@@ -230,17 +272,42 @@ for (const songEntry of zetarakuSongs) {
 		}
 
 		// Try to find the folderId
-		const folderId = findNonUtageFolderId(songId, title);
-		if (folderId) {
+		const [folderId, dxFolderId, stFolderId] = findNonUtageFolderId(songId, title);
+
+		if (!folderId) {
+			// In gdrive but couldn't find folderId
+			notFoundSongIds.push(songId);
+			continue;
+		}
+
+		const addSong = async (folderId: string) => {
 			const songObj = await createSongObject(songEntry, folderId);
 			songs.push(songObj);
 			++nonUtageSongsProcessed;
-		} else {
-			// In gdrive but couldn't find folderId
-			notFoundSongIds.push(songId);
-		}
+		};
+
+		await addSong(folderId);
+
+		if (dxFolderId)
+			await addSong(dxFolderId);
+		if (stFolderId)
+			await addSong(stFolderId);
 	}
 }
+
+const collectedSongTitles = new Set(songs.map((s) => s.title));
+const allDxConverts = new Set(mySongNames.filter((s) => s.endsWith('[DX]')));
+const allStConverts = new Set(mySongNames.filter((s) => s.endsWith('[ST]')));
+const all1pConverts = new Set(mySongNames.filter((s) => s.endsWith('[1P]')));
+const all2pConverts = new Set(mySongNames.filter((s) => s.endsWith('[2P]')));
+const allEzConverts = new Set(mySongNames.filter((s) => s.endsWith('[EASY]')));
+const allHdConverts = new Set(mySongNames.filter((s) => s.endsWith('[HARD]')));
+console.log('Uncollected DX converts:', allDxConverts.difference(collectedSongTitles));
+console.log('Uncollected ST converts:', allStConverts.difference(collectedSongTitles));
+console.log('Uncollected 1P converts:', all1pConverts.difference(collectedSongTitles));
+console.log('Uncollected 2P converts:', all2pConverts.difference(collectedSongTitles));
+console.log('Uncollected EASY converts:', allEzConverts.difference(collectedSongTitles));
+console.log('Uncollected HARD converts:', allHdConverts.difference(collectedSongTitles));
 
 // Log results
 console.log(`Total matched songs: ${songs.length}`);
