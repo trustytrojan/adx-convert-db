@@ -33395,5 +33395,72 @@
 			"14+"
 		],
 		"romanizedDesigner": "safua futo , Luxizhel + kamaboko kun + happi "
+	},
+	{
+		"id": "1j4TmXj-FoFYI-W9ls0n4NiatIUU4ifox",
+		"zetarakuId": "ラプラスショコラ",
+		"title": "ラプラスショコラ",
+		"artist": "Kai",
+		"designer": "Luxizhel,はっぴー",
+		"releaseDate": "2026-02-13",
+		"levels": [
+			"2",
+			"6",
+			"9+",
+			"12+"
+		],
+		"romanizedTitle": "rapurasu shokora",
+		"romanizedDesigner": "Luxizhel , happi "
+	},
+	{
+		"id": "1uZ_g3jgzkzLKrd3jq9ydPmxkDST1gTQm",
+		"zetarakuId": "恋の氷結おてんば湯けむりチルノ温泉",
+		"title": "恋の氷結おてんば湯けむりチルノ温泉",
+		"artist": "uno×夕野ヨシミ feat. miko",
+		"designer": "ロシェ@ペンギン,Luxizhel",
+		"releaseDate": "2026-02-20",
+		"levels": [
+			"3",
+			"7",
+			"10+",
+			"13"
+		],
+		"romanizedTitle": "koi no hyoketsu o ten ba yukemuri chiruno onsen",
+		"romanizedArtist": "uno× yu no yoshimi feat . miko",
+		"romanizedDesigner": "roshie @ pengin , Luxizhel"
+	},
+	{
+		"id": "1BYKaTkafa-4mzEbODZR4UJdNmjYYd-Zi",
+		"zetarakuId": "イタ電はやめて！ ぼくらのスカーレット・コール",
+		"title": "イタ電はやめて！ ぼくらのスカーレット・コール",
+		"artist": "七条レタスグループ",
+		"designer": "サファ太,はっぴー",
+		"releaseDate": "2026-02-20",
+		"levels": [
+			"1",
+			"5",
+			"9",
+			"12+"
+		],
+		"romanizedTitle": "ita den wa yame te ! boku ra no sukaretto ･ koru",
+		"romanizedArtist": "nana jo retasu gurupu",
+		"romanizedDesigner": "safua futo , happi "
+	},
+	{
+		"id": "1pwsrvLUEbI7VtNrzuWUx7kUD1_JwJ_0G",
+		"zetarakuId": "むしみこうにゃーのハッピッピー",
+		"title": "むしみこうにゃーのハッピッピー",
+		"artist": "ARM×狐夢想 feat. miko×山本椛",
+		"designer": "サファ太,じゃこレモン",
+		"releaseDate": "2026-02-20",
+		"levels": [
+			"3",
+			"7+",
+			"11",
+			"13+"
+		],
+		"romanizedTitle": "mushi mi ko nya no happippi",
+		"romanizedArtist": "ARM× kitsune muso feat . miko× yamamoto momiji",
+		"romanizedDesigner": "safua futo , ja ko remon"
 	}
 ]
