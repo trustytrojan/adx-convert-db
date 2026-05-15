@@ -151,6 +151,27 @@
 		]
 	},
 	{
+		"id": "1L69nUAxni576LdHireM-9vbje8UUi4eF",
+		"zetarakuId": "ブリキノダンス",
+		"title": "ブリキノダンス",
+		"artist": "日向電工",
+		"designer": "サファ太,緑風 犬三郎,はっぴー",
+		"releaseDate": "2018-08-07",
+		"levels": [
+			"5",
+			"7+",
+			"10+",
+			"12",
+			"13"
+		],
+		"romanizedTitle": "buriki no dansu",
+		"romanizedArtist": "hinata denko",
+		"romanizedDesigner": "safua futo , ryokufu inu san ro , happi ",
+		"communityNames": [
+			"BURIKI NO DANCE"
+		]
+	},
+	{
 		"id": "19g1Myi5w0qR5WOLPPGVO58ESQcVhfdNu",
 		"zetarakuId": "ファッとして桃源郷",
 		"title": "ファッとして桃源郷",
@@ -248,7 +269,7 @@
 		"zetarakuId": "This game",
 		"title": "This game",
 		"artist": "鈴木このみ「ノーゲーム・ノーライフ」",
-		"designer": "LabiLabi,某S氏",
+		"designer": "玉子豆腐,某S氏",
 		"releaseDate": "2018-01-23",
 		"levels": [
 			"4",
@@ -257,7 +278,7 @@
 			"13"
 		],
 		"romanizedArtist": "suzuki konomi \" nogemu ･ no raifu \"",
-		"romanizedDesigner": "LabiLabi , bo S shi"
+		"romanizedDesigner": "tamago tofu , bo S shi"
 	},
 	{
 		"id": "1C6zxxk3Bb7vE4IGSqWOgfrzhCE8meFQD",
@@ -3445,6 +3466,17 @@
 		"romanizedTitle": "[ 撫 ] karakuri piero"
 	},
 	{
+		"id": "1j3qs8Ugun6hVV-1C55eWLU_RtI6_1_lm",
+		"zetarakuId": "(宴) からくりピエロ",
+		"title": "[習] からくりピエロ",
+		"artist": "40mP",
+		"releaseDate": "2017-07-25",
+		"levels": [
+			"*"
+		],
+		"romanizedTitle": "[ 習 ] karakuri piero"
+	},
+	{
 		"id": "1esV5vqkoyVI-HclUnQJwT7mszE9LaXNV",
 		"zetarakuId": "(宴) だんだん早くなる",
 		"title": "[耐] だんだん早くなる",
@@ -4825,7 +4857,7 @@
 		"zetarakuId": "源平大戦絵巻テーマソング",
 		"title": "源平大戦絵巻テーマソング",
 		"artist": "新小田夢童 ＆ キラ★ロッソ",
-		"designer": "譜面-100号,ニャイン,舞舞10年ズ (チャンとはっぴー)",
+		"designer": "譜面-100号,ニャイン,舞舞10年ズ（チャンとはっぴー）",
 		"releaseDate": "2012-07-11",
 		"levels": [
 			"6",
@@ -5962,7 +5994,7 @@
 		"zetarakuId": "Tell Your World",
 		"title": "Tell Your World",
 		"artist": "livetune",
-		"designer": "合作だよ,mai-Star,某S氏",
+		"designer": "譜面-100号とはっぴー,mai-Star,某S氏",
 		"releaseDate": "2013-03-07",
 		"levels": [
 			"6",
@@ -5971,7 +6003,7 @@
 			"12",
 			"13"
 		],
-		"romanizedDesigner": "gassaku da yo , mai - Star , bo S shi"
+		"romanizedDesigner": "fumen - 100 go to happi , mai - Star , bo S shi"
 	},
 	{
 		"id": "16zlrSZNiPUuxEbi8xLTwVKRNcBJBD0FG",
@@ -6329,7 +6361,7 @@
 		"zetarakuId": "脳漿炸裂ガール",
 		"title": "脳漿炸裂ガール",
 		"artist": "れるりり",
-		"designer": "Jack,はっぴー,合作だよ",
+		"designer": "Jack,はっぴー,譜面-100号とはっぴー",
 		"releaseDate": "2013-07-11",
 		"levels": [
 			"5",
@@ -6339,7 +6371,7 @@
 		],
 		"romanizedTitle": "nosho sakuretsu garu",
 		"romanizedArtist": "reru ri ri",
-		"romanizedDesigner": "Jack , happi , gassaku da yo",
+		"romanizedDesigner": "Jack , happi , fumen - 100 go to happi ",
 		"communityNames": [
 			"nou shou sakuretsu girl",
 			"noushou",
@@ -6351,7 +6383,7 @@
 		"zetarakuId": "脳漿炸裂ガール",
 		"title": "脳漿炸裂ガール [DX]",
 		"artist": "れるりり",
-		"designer": "Jack,はっぴー,合作だよ",
+		"designer": "Jack,はっぴー,譜面-100号とはっぴー",
 		"releaseDate": "2013-07-11",
 		"levels": [
 			"4",
@@ -6361,7 +6393,7 @@
 		],
 		"romanizedTitle": "nosho sakuretsu garu [ DX ]",
 		"romanizedArtist": "reru ri ri",
-		"romanizedDesigner": "Jack , happi , gassaku da yo",
+		"romanizedDesigner": "Jack , happi , fumen - 100 go to happi ",
 		"communityNames": [
 			"nou shou sakuretsu girl",
 			"noushou",
@@ -6437,7 +6469,7 @@
 		"zetarakuId": "Bad Apple!! feat.nomico",
 		"title": "Bad Apple!! feat nomico",
 		"artist": "Masayoshi Minoshima",
-		"designer": "譜面-100号,mai-Star,合作だよ",
+		"designer": "譜面-100号,mai-Star,Jack vs 某S氏",
 		"releaseDate": "2013-07-11",
 		"levels": [
 			"3",
@@ -6446,7 +6478,7 @@
 			"12",
 			"13"
 		],
-		"romanizedDesigner": "fumen - 100 go , mai - Star , gassaku da yo",
+		"romanizedDesigner": "fumen - 100 go , mai - Star , Jack vs bo S shi",
 		"communityNames": [
 			"Bad Apple"
 		]
@@ -6579,7 +6611,7 @@
 		"zetarakuId": "神室雪月花",
 		"title": "神室雪月花",
 		"artist": "桐生 一馬「龍が如く」",
-		"designer": "合作だよ,mai-Star",
+		"designer": "譜面-100号とはっぴー,mai-Star",
 		"releaseDate": "2013-07-11",
 		"levels": [
 			"2",
@@ -6589,7 +6621,7 @@
 		],
 		"romanizedTitle": "kamuro setsugekka",
 		"romanizedArtist": "kiryu kazuma \" ryu ga shiku \"",
-		"romanizedDesigner": "gassaku da yo , mai - Star",
+		"romanizedDesigner": "fumen - 100 go to happi , mai - Star",
 		"communityNames": [
 			"KAMURO-SETSUGEKKA"
 		]
@@ -6703,7 +6735,7 @@
 		"zetarakuId": "Get Happy",
 		"title": "Get Happy",
 		"artist": "Jimmy Weckl",
-		"designer": "譜面-100号,合作だよ",
+		"designer": "譜面-100号,ニャインとはっぴー",
 		"releaseDate": "2013-07-11",
 		"levels": [
 			"4",
@@ -6711,7 +6743,7 @@
 			"12+",
 			"13+"
 		],
-		"romanizedDesigner": "fumen - 100 go , gassaku da yo"
+		"romanizedDesigner": "fumen - 100 go , nyain to happi "
 	},
 	{
 		"id": "1cWO__bZMzp4AEOabMWy13jtx5P8tULx5",
@@ -7047,7 +7079,7 @@
 		"zetarakuId": "魔理沙は大変なものを盗んでいきました",
 		"title": "魔理沙は大変なものを盗んでいきました",
 		"artist": "ARM＋夕野ヨシミ(IOSYS)feat. 藤咲かりん",
-		"designer": "はっぴー",
+		"designer": "サファ太,Luxizhel,はっぴー",
 		"releaseDate": "2013-09-05",
 		"levels": [
 			"6",
@@ -7057,7 +7089,27 @@
 		],
 		"romanizedTitle": "ma risa wa taihen na mono o nusun de iki mashi ta",
 		"romanizedArtist": "ARM + yu no yoshimi ( IOSYS ) feat . fuji saki ka rin",
-		"romanizedDesigner": "happi ",
+		"romanizedDesigner": "safua futo , Luxizhel , happi ",
+		"communityNames": [
+			"Marisa Stole the Precious Thing"
+		]
+	},
+	{
+		"id": "1Q4Iq2-zbIhCZJTKoTtfmLvAr_LLkuDUQ",
+		"zetarakuId": "魔理沙は大変なものを盗んでいきました",
+		"title": "魔理沙は大変なものを盗んでいきました [DX]",
+		"artist": "ARM＋夕野ヨシミ(IOSYS)feat. 藤咲かりん",
+		"designer": "サファ太,Luxizhel,はっぴー",
+		"releaseDate": "2013-09-05",
+		"levels": [
+			"3",
+			"6",
+			"10",
+			"13+"
+		],
+		"romanizedTitle": "ma risa wa taihen na mono o nusun de iki mashi ta [ DX ]",
+		"romanizedArtist": "ARM + yu no yoshimi ( IOSYS ) feat . fuji saki ka rin",
+		"romanizedDesigner": "safua futo , Luxizhel , happi ",
 		"communityNames": [
 			"Marisa Stole the Precious Thing"
 		]
@@ -7325,7 +7377,7 @@
 		"zetarakuId": "System “Z”",
 		"title": "System “Z”",
 		"artist": "Jimmy Weckl",
-		"designer": "譜面-100号,合作だよ,チャン@DP皆伝",
+		"designer": "譜面-100号,譜面-100号とはっぴー,チャン@DP皆伝",
 		"releaseDate": "2013-10-24",
 		"levels": [
 			"6",
@@ -7334,7 +7386,7 @@
 			"14",
 			"14"
 		],
-		"romanizedDesigner": "fumen - 100 go , gassaku da yo , chan @ DP kaiden"
+		"romanizedDesigner": "fumen - 100 go , fumen - 100 go to happi , chan @ DP kaiden"
 	},
 	{
 		"id": "1kRoTKh0-7uHL8g7sAv3cR9lTqIeBbyCx",
@@ -7439,7 +7491,7 @@
 		"zetarakuId": "DADDY MULK -Groove remix-",
 		"title": "DADDY MULK -Groove remix-",
 		"artist": "Performed by SEGA Sound Unit [H.]",
-		"designer": "合作だよ,mai-Star,ものくロシェ",
+		"designer": "ニャインとはっぴー,mai-Star,ものくロシェ",
 		"releaseDate": "2013-12-05",
 		"levels": [
 			"5",
@@ -7448,7 +7500,7 @@
 			"13+",
 			"13+"
 		],
-		"romanizedDesigner": "gassaku da yo , mai - Star , mo noku roshie",
+		"romanizedDesigner": "nyain to happi , mai - Star , mo noku roshie",
 		"communityNames": [
 			"Daddy Mulk"
 		]
@@ -7554,7 +7606,7 @@
 		"zetarakuId": "天ノ弱",
 		"title": "天ノ弱",
 		"artist": "164",
-		"designer": "小鳥遊さん,シチミヘルツ,譜面-100号,合作だよ",
+		"designer": "小鳥遊さん,シチミヘルツ,譜面-100号,mai-Starとはっぴー",
 		"releaseDate": "2014-01-23",
 		"levels": [
 			"4",
@@ -7563,7 +7615,7 @@
 			"13"
 		],
 		"romanizedTitle": "ten no jaku",
-		"romanizedDesigner": "kotori 遊 san , shichimiherutsu , fumen - 100 go , gassaku da yo",
+		"romanizedDesigner": "kotori 遊 san , shichimiherutsu , fumen - 100 go , mai - Star to happi ",
 		"communityNames": [
 			"amanojaku"
 		]
@@ -7573,7 +7625,7 @@
 		"zetarakuId": "天ノ弱",
 		"title": "天ノ弱 [DX]",
 		"artist": "164",
-		"designer": "小鳥遊さん,シチミヘルツ,譜面-100号,合作だよ",
+		"designer": "小鳥遊さん,シチミヘルツ,譜面-100号,mai-Starとはっぴー",
 		"releaseDate": "2014-01-23",
 		"levels": [
 			"3",
@@ -7582,7 +7634,7 @@
 			"12+"
 		],
 		"romanizedTitle": "ten no jaku [ DX ]",
-		"romanizedDesigner": "kotori 遊 san , shichimiherutsu , fumen - 100 go , gassaku da yo",
+		"romanizedDesigner": "kotori 遊 san , shichimiherutsu , fumen - 100 go , mai - Star to happi ",
 		"communityNames": [
 			"amanojaku"
 		]
@@ -8052,7 +8104,7 @@
 		"zetarakuId": "MYTHOS",
 		"title": "MYTHOS",
 		"artist": "Cranky feat. まらしぃ ＆ てっぺい先生",
-		"designer": "合作だよ,mai-Star",
+		"designer": "Jack vs 譜面-100号,mai-Star",
 		"releaseDate": "2014-04-10",
 		"levels": [
 			"5",
@@ -8061,7 +8113,7 @@
 			"14"
 		],
 		"romanizedArtist": "Cranky feat . ma rashi i & teppei sensei",
-		"romanizedDesigner": "gassaku da yo , mai - Star"
+		"romanizedDesigner": "Jack vs fumen - 100 go , mai - Star"
 	},
 	{
 		"id": "1KocrKBMLk7Aw7FyXiW5zxQj5hxpoRPiI",
@@ -8965,7 +9017,7 @@
 		"zetarakuId": "きたさいたま2000",
 		"title": "きたさいたま2000",
 		"artist": "LindaAI-CUE(BNGI)「太鼓の達人」より",
-		"designer": "はっぴー,合作だよ",
+		"designer": "はっぴー,譜面-100号とはっぴー",
 		"releaseDate": "2014-10-29",
 		"levels": [
 			"5",
@@ -8975,7 +9027,7 @@
 		],
 		"romanizedTitle": "ki ta saitama 2000",
 		"romanizedArtist": "LindaAI - CUE ( BNGI )\" taiko no tatsujin \" yori",
-		"romanizedDesigner": "happi , gassaku da yo",
+		"romanizedDesigner": "happi , fumen - 100 go to happi ",
 		"communityNames": [
 			"Kitasaitama 2000",
 			"Kitasaitama",
@@ -9138,7 +9190,7 @@
 		"zetarakuId": "planet dancer",
 		"title": "planet dancer",
 		"artist": "樽木栄一郎",
-		"designer": "合作だよ,はっぴー,ロシェ@ペンギン",
+		"designer": "rioNとはっぴー,はっぴー,ロシェ@ペンギン",
 		"releaseDate": "2014-12-18",
 		"levels": [
 			"4",
@@ -9148,7 +9200,7 @@
 			"13+"
 		],
 		"romanizedArtist": "taru ki eiichiro",
-		"romanizedDesigner": "gassaku da yo , happi , roshie @ pengin"
+		"romanizedDesigner": "rioN to happi , happi , roshie @ pengin"
 	},
 	{
 		"id": "17s3nfStmRe0GgYD5ZG-QT3U857kiXY77",
@@ -9328,7 +9380,7 @@
 		"zetarakuId": "Caliburne ～Story of the Legendary sword～",
 		"title": "Caliburne ～Story of the Legendary sword～",
 		"artist": "Project Grimoire",
-		"designer": "合作だよ,はっぴー",
+		"designer": "Jack vs mai-Star,はっぴー",
 		"releaseDate": "2015-03-05",
 		"levels": [
 			"5",
@@ -9336,7 +9388,7 @@
 			"12+",
 			"14"
 		],
-		"romanizedDesigner": "gassaku da yo , happi ",
+		"romanizedDesigner": "Jack vs mai - Star , happi ",
 		"communityNames": [
 			"caliburne",
 			"cali"
@@ -9487,7 +9539,7 @@
 		"zetarakuId": "L9",
 		"title": "L9",
 		"artist": "paraoka",
-		"designer": "合作だよ,ロシェ@ペンギン",
+		"designer": "Revo@LC vs Jack,ロシェ@ペンギン",
 		"releaseDate": "2015-03-19",
 		"levels": [
 			"5",
@@ -9495,7 +9547,7 @@
 			"11",
 			"13+"
 		],
-		"romanizedDesigner": "gassaku da yo , roshie @ pengin"
+		"romanizedDesigner": "Revo @ LC vs Jack , roshie @ pengin"
 	},
 	{
 		"id": "1KHy98V9V2VHsZhBjvj3fGwgu0uKe9t1I",
@@ -10710,7 +10762,7 @@
 		"zetarakuId": "東方妖々夢 ～the maximum moving about～",
 		"title": "東方妖々夢 ～the maximum moving about～",
 		"artist": "石鹸屋",
-		"designer": "しろいろ,合作だよ",
+		"designer": "しろいろ,rioNとはっぴー",
 		"releaseDate": "2016-05-12",
 		"levels": [
 			"6",
@@ -10720,7 +10772,7 @@
 		],
 		"romanizedTitle": "toho 妖 々 yume ~ the maximum moving about ~",
 		"romanizedArtist": "sekken ya",
-		"romanizedDesigner": "shiroi ro , gassaku da yo",
+		"romanizedDesigner": "shiroi ro , rioN to happi ",
 		"communityNames": [
 			"toho yoyomu -the maximum moving about-",
 			"the maximum moving about"
@@ -10786,7 +10838,7 @@
 		"zetarakuId": "Glorious Crown",
 		"title": "Glorious Crown",
 		"artist": "xi",
-		"designer": "ぴちネコ,合作だよ",
+		"designer": "ぴちネコ,チャン@DP皆伝 vs Jack",
 		"releaseDate": "2016-05-26",
 		"levels": [
 			"7",
@@ -10794,7 +10846,7 @@
 			"13",
 			"14+"
 		],
-		"romanizedDesigner": "pichi neko , gassaku da yo",
+		"romanizedDesigner": "pichi neko , chan @ DP kaiden vs Jack",
 		"communityNames": [
 			"gc"
 		]
@@ -10866,7 +10918,7 @@
 		"zetarakuId": "恋愛裁判",
 		"title": "恋愛裁判",
 		"artist": "40mP",
-		"designer": "合作だよ",
+		"designer": "畳返しとはっぴー,しろいろとはっぴー",
 		"releaseDate": "2016-06-30",
 		"levels": [
 			"4",
@@ -10875,7 +10927,7 @@
 			"11+"
 		],
 		"romanizedTitle": "renai saiban",
-		"romanizedDesigner": "gassaku da yo",
+		"romanizedDesigner": "tatami gaeshi to happi , shiroi ro to happi ",
 		"communityNames": [
 			"Love Trial"
 		]
@@ -11424,7 +11476,7 @@
 		"zetarakuId": "AMAZING MIGHTYYYY!!!!",
 		"title": "AMAZING MIGHTYYYY!!!!",
 		"artist": "WAiKURO",
-		"designer": "はっぴー,合作だよ",
+		"designer": "はっぴー,ぴちネコ vs Jack",
 		"releaseDate": "2016-11-17",
 		"levels": [
 			"7+",
@@ -11433,7 +11485,7 @@
 			"14+",
 			"14"
 		],
-		"romanizedDesigner": "happi , gassaku da yo",
+		"romanizedDesigner": "happi , pichi neko vs Jack",
 		"communityNames": [
 			"amz",
 			"amemai",
@@ -11534,7 +11586,7 @@
 		"zetarakuId": "空威張りビヘイビア",
 		"title": "空威張りビヘイビア",
 		"artist": "un:c・ろん×じーざすP",
-		"designer": "Techno Kitchen,合作だよ",
+		"designer": "Techno Kitchen,Revo@LC vs Jack",
 		"releaseDate": "2016-12-15",
 		"levels": [
 			"6",
@@ -11544,7 +11596,6 @@
 		],
 		"romanizedTitle": "karaibari biheibia",
 		"romanizedArtist": "un : c ･ ro n × ji zasu P",
-		"romanizedDesigner": "Techno Kitchen , gassaku da yo",
 		"communityNames": [
 			"brash behavior"
 		]
@@ -12628,7 +12679,7 @@
 		"id": "11xh05ZwDQyNwCmBgczwTCeLABmWwvBTJ",
 		"zetarakuId": "オトヒメモリー☆ウタゲーション",
 		"title": "オトヒメモリー☆ウタゲーション",
-		"artist": "Junky",
+		"artist": "Junky feat. 乙姫(CV:浅川悠)",
 		"designer": "小鳥遊さん,ぴちネコ",
 		"releaseDate": "2017-07-11",
 		"levels": [
@@ -12638,6 +12689,7 @@
 			"12+"
 		],
 		"romanizedTitle": "otohimemori ☆ utageshon",
+		"romanizedArtist": "Junky feat . otohime ( CV : asagawa yu )",
 		"romanizedDesigner": "kotori 遊 san , pichi neko",
 		"communityNames": [
 			"OTOHIMEMORY☆UTAGATION",
@@ -12723,7 +12775,7 @@
 		"zetarakuId": "バッド・ダンス・ホール",
 		"title": "バッド・ダンス・ホール",
 		"artist": "ぱなまん/カラスヤサボウ",
-		"designer": "小鳥遊さん,LabiLabi",
+		"designer": "サファ太,はっぴー,小鳥遊さん,LabiLabi",
 		"releaseDate": "2017-07-25",
 		"levels": [
 			"5",
@@ -12733,7 +12785,27 @@
 		],
 		"romanizedTitle": "baddo･dansu･horu",
 		"romanizedArtist": "panaman / karasuyasabou",
-		"romanizedDesigner": "kotori 遊 san , LabiLabi",
+		"romanizedDesigner": "safua futo , happi , kotori 遊 san , LabiLabi",
+		"communityNames": [
+			"BAD・DANCE・HALL"
+		]
+	},
+	{
+		"id": "1BpgH6pXEIcJIfFLaz-4Xj__YUpcO8YvR",
+		"zetarakuId": "バッド・ダンス・ホール",
+		"title": "バッド・ダンス・ホール [DX]",
+		"artist": "ぱなまん/カラスヤサボウ",
+		"designer": "サファ太,はっぴー,小鳥遊さん,LabiLabi",
+		"releaseDate": "2017-07-25",
+		"levels": [
+			"3",
+			"6",
+			"11",
+			"13+"
+		],
+		"romanizedTitle": "baddo･dansu･horu [ DX ]",
+		"romanizedArtist": "panaman / karasuyasabou",
+		"romanizedDesigner": "safua futo , happi , kotori 遊 san , LabiLabi",
 		"communityNames": [
 			"BAD・DANCE・HALL"
 		]
@@ -14686,27 +14758,6 @@
 		"romanizedDesigner": "sukiya ki bugyo , Jack"
 	},
 	{
-		"id": "1L69nUAxni576LdHireM-9vbje8UUi4eF",
-		"zetarakuId": "ブリキノダンス",
-		"title": "ブリキノダンス",
-		"artist": "日向電工",
-		"designer": "サファ太,緑風 犬三郎,はっぴー",
-		"releaseDate": "2018-08-07",
-		"levels": [
-			"5",
-			"7+",
-			"10+",
-			"12",
-			"13"
-		],
-		"romanizedTitle": "buriki no dansu",
-		"romanizedArtist": "hinata denko",
-		"romanizedDesigner": "safua futo , ryokufu inu san ro , happi ",
-		"communityNames": [
-			"BURIKI NO DANCE"
-		]
-	},
-	{
 		"id": "1pZWpJktjayvLexmXIEHuZh5ErS3rssGq",
 		"zetarakuId": "インビジブル",
 		"title": "インビジブル",
@@ -14954,7 +15005,7 @@
 		"zetarakuId": "アマノジャクリバース feat. ｙｔｒ",
 		"title": "アマノジャクリバース feat. ｙｔｒ",
 		"artist": "魂音泉",
-		"designer": "某S氏,合作だよ",
+		"designer": "某S氏,はっぴー vs Jack",
 		"releaseDate": "2018-10-02",
 		"levels": [
 			"5",
@@ -14964,7 +15015,7 @@
 		],
 		"romanizedTitle": "amanojakuribasu feat . ｙｔｒ",
 		"romanizedArtist": "tamashi oto izumi",
-		"romanizedDesigner": "bo S shi , gassaku da yo",
+		"romanizedDesigner": "bo S shi , happi vs Jack",
 		"communityNames": [
 			"Amanojaku Reverse (feat. y t r)",
 			"Amanojaku Reverse"
@@ -15132,7 +15183,7 @@
 		"zetarakuId": "花と、雪と、ドラムンベース。",
 		"title": "花と、雪と、ドラムンベース。",
 		"artist": "kanone feat. せんざい",
-		"designer": "Jack,合作だよ,はっぴー",
+		"designer": "Jack,ぴちネコ vs Moon Strix,はっぴー",
 		"releaseDate": "2018-11-06",
 		"levels": [
 			"6",
@@ -15143,7 +15194,7 @@
 		],
 		"romanizedTitle": "hana to , yuki to , doramumbesu .",
 		"romanizedArtist": "kanone feat . sen zai",
-		"romanizedDesigner": "Jack , gassaku da yo , happi ",
+		"romanizedDesigner": "Jack , pichi neko vs Moon Strix , happi ",
 		"communityNames": [
 			"Flower, snow and Drum'n'bass.",
 			"fsd",
@@ -15468,7 +15519,7 @@
 		"zetarakuId": "TiamaT:F minor",
 		"title": "TiamaTF minor",
 		"artist": "Team Grimoire",
-		"designer": "Jack,合作だよ",
+		"designer": "Jack,小鳥遊さん vs LabiLabi",
 		"releaseDate": "2018-12-13",
 		"levels": [
 			"7",
@@ -15476,7 +15527,7 @@
 			"13",
 			"14+"
 		],
-		"romanizedDesigner": "Jack , gassaku da yo",
+		"romanizedDesigner": "Jack , kotori 遊 san vs LabiLabi",
 		"communityNames": [
 			"tiamat"
 		]
@@ -16241,7 +16292,7 @@
 		"zetarakuId": "Schwarzschild",
 		"title": "Schwarzschild",
 		"artist": "Tsukasa",
-		"designer": "Jack,\"H\"ack,\"H\"ack underground",
+		"designer": "Jack,“H”ack,“H”ack underground",
 		"releaseDate": "2019-01-11",
 		"levels": [
 			"7",
@@ -17581,7 +17632,7 @@
 			"2",
 			"6",
 			"8+",
-			"12"
+			"12+"
 		],
 		"romanizedTitle": "dakara boku wa ongaku o yame ta",
 		"romanizedArtist": "yorushika",
@@ -18294,7 +18345,8 @@
 			"135 seconds of flame",
 			"135 seconds",
 			"Fuen no Hyakusanjugobyo",
-			"135f"
+			"135f",
+			"封焔135"
 		]
 	},
 	{
@@ -18810,7 +18862,7 @@
 		"zetarakuId": "≠彡\"/了→",
 		"title": "≠彡了→",
 		"artist": "水野健治",
-		"designer": "はっぴー,ﾚょ†ょ／U丶\"┠(十,3、了ﾅﾆ",
+		"designer": "はっぴー,ﾚよ†ょ／∪ヽ”┠  (十,3､了ﾅﾆ",
 		"releaseDate": "2020-10-01",
 		"levels": [
 			"5",
@@ -18820,7 +18872,7 @@
 		],
 		"romanizedTitle": "≠ 彡 ryo →",
 		"romanizedArtist": "mizuno kenji",
-		"romanizedDesigner": "happi , ﾚ yo † yo / U 丶 \"┠( ju , 3 , ryo ﾅﾆ",
+		"romanizedDesigner": "happi , ﾚ yo † yo /∪ ヽ \"┠ ( ju , 3 ､ ryo ﾅﾆ",
 		"communityNames": [
 			"Kimitour",
 			"Kimitsua"
@@ -24419,7 +24471,7 @@
 		"zetarakuId": "ViRTUS",
 		"title": "ViRTUS",
 		"artist": "Hiro",
-		"designer": "Jack,jacK on Phoenix vs -ZONE- SaFaRi",
+		"designer": "Jack,jacK on Phoenix & -ZONE- SaFaRi",
 		"releaseDate": "2023-03-02",
 		"levels": [
 			"6",
@@ -29317,7 +29369,8 @@
 		"romanizedDesigner": "safua futo , BELiZHEL vs 7 . 3 GHz",
 		"communityNames": [
 			"135i",
-			"135 2"
+			"135 2",
+			"氷滅135"
 		]
 	},
 	{
@@ -30277,7 +30330,8 @@
 		"romanizedArtist": "uta : ka fu / sakushi ･ sakkyoku : MIMI",
 		"romanizedDesigner": "Luxizhel , hato horuda",
 		"communityNames": [
-			"yurikago"
+			"yurikago",
+			"cradle"
 		]
 	},
 	{
@@ -30297,7 +30351,8 @@
 		"romanizedArtist": "uta : V . I . P / sakushi ･ sakkyoku : ren",
 		"romanizedDesigner": "amaririsu , roshie @ pengin",
 		"communityNames": [
-			"moonlight"
+			"moonlight",
+			"gekkou"
 		]
 	},
 	{
@@ -30645,7 +30700,7 @@
 			"2",
 			"6",
 			"9+",
-			"13"
+			"13+"
 		],
 		"romanizedTitle": "sunaneko no uta",
 		"romanizedArtist": "punipuni denki",
@@ -30764,7 +30819,7 @@
 		"levels": [
 			"3",
 			"7",
-			"10",
+			"9+",
 			"13"
 		],
 		"romanizedTitle": "hao",
@@ -31582,7 +31637,7 @@
 			"4",
 			"7+",
 			"11",
-			"13+"
+			"14"
 		],
 		"romanizedArtist": "鬱 P feat . 000",
 		"romanizedDesigner": "safua futo , hato horuda"
@@ -31937,7 +31992,10 @@
 		],
 		"romanizedTitle": "karamawari raiburari",
 		"romanizedArtist": "yukino ito",
-		"romanizedDesigner": "Luxizhel , happi "
+		"romanizedDesigner": "Luxizhel , happi ",
+		"communityNames": [
+			"Karamawari Library"
+		]
 	},
 	{
 		"id": "1sxIQCS9FT6nV-dVWqbVGHjjsXqLI9_Ur",
@@ -31954,7 +32012,10 @@
 		],
 		"romanizedTitle": "o noroi",
 		"romanizedArtist": "naki so",
-		"romanizedDesigner": "ki yomurin , amaririsu"
+		"romanizedDesigner": "ki yomurin , amaririsu",
+		"communityNames": [
+			"OMAJINAI"
+		]
 	},
 	{
 		"id": "1PqnszhQdWIVVu7D9LEX9xq0J9LcOSq2o",
@@ -31970,7 +32031,11 @@
 			"13+"
 		],
 		"romanizedTitle": "ari ki tari na koi no uta",
-		"romanizedDesigner": "happi , hato horuda"
+		"romanizedDesigner": "happi , hato horuda",
+		"communityNames": [
+			"Arikitari na Koi no Uta",
+			"A Commonplace Love Song"
+		]
 	},
 	{
 		"id": "1_gCKqIdjvGQvnGLKvOprljNo4FmWBx32",
@@ -32043,7 +32108,10 @@
 		],
 		"romanizedTitle": "shojo rei",
 		"romanizedArtist": "miki to P",
-		"romanizedDesigner": "hato horuda , Luxizhel"
+		"romanizedDesigner": "hato horuda , Luxizhel",
+		"communityNames": [
+			"Shoujo rei"
+		]
 	},
 	{
 		"id": "1_odVrDWkkGmrkljWwMQeCKQmwl1sJ4qS",
@@ -32060,7 +32128,10 @@
 		],
 		"romanizedTitle": "shojo A",
 		"romanizedArtist": "shiina mo ta",
-		"romanizedDesigner": "amaririsu , happi "
+		"romanizedDesigner": "amaririsu , happi ",
+		"communityNames": [
+			"Shoujo A"
+		]
 	},
 	{
 		"id": "1V9siFvkbi5yYb912IDD7elPrIIRUyTJP",
@@ -32076,7 +32147,11 @@
 			"13"
 		],
 		"romanizedTitle": "teikoku shojo",
-		"romanizedDesigner": "happi , kamaboko horuda"
+		"romanizedDesigner": "happi , kamaboko horuda",
+		"communityNames": [
+			"Imperial Girl",
+			"Teikoku Shoujo"
+		]
 	},
 	{
 		"id": "1FPx4sXBPhijhZhNumw3xx_KgZMymLw02",
@@ -32122,7 +32197,10 @@
 			"14"
 		],
 		"romanizedArtist": "Ardolf vs . Daily ten togi ( gen kyoku : mm - y & Kry . exe )",
-		"romanizedDesigner": "happi , safua futoshi"
+		"romanizedDesigner": "happi , safua futoshi",
+		"communityNames": [
+			"Retribution"
+		]
 	},
 	{
 		"id": "19mHTKwzUv4gcjHzcBxSqkv2hVuNIBdIz",
@@ -32186,7 +32264,11 @@
 		],
 		"romanizedTitle": "shingari tsu ! ? go ranshin ! ?",
 		"romanizedArtist": "Shu feat . amo shiro tsu pu",
-		"romanizedDesigner": "happi , pichi neko"
+		"romanizedDesigner": "happi , pichi neko",
+		"communityNames": [
+			"goranshin",
+			"tono goranshin"
+		]
 	},
 	{
 		"id": "1GCv1Z5NqnR6lT8htCbn3PtKcKIx9m7Oe",
@@ -32203,7 +32285,10 @@
 		],
 		"romanizedTitle": "ibirugaru",
 		"romanizedArtist": "Fushi feat . yoshino",
-		"romanizedDesigner": "roshie @ pengin , Luxizhel & hato horuda"
+		"romanizedDesigner": "roshie @ pengin , Luxizhel & hato horuda",
+		"communityNames": [
+			"evil girl"
+		]
 	},
 	{
 		"id": "10fp70eBUUux56vJK9wBEJ3UPydrnSi-o",
@@ -32252,7 +32337,10 @@
 		],
 		"romanizedTitle": "irodori kyambasu",
 		"romanizedArtist": "SUGAR RUSH \" buru akaibu - Blue Archive -\"",
-		"romanizedDesigner": "happi , amaririsu"
+		"romanizedDesigner": "happi , amaririsu",
+		"communityNames": [
+			"Irodori Canvas"
+		]
 	},
 	{
 		"id": "16sjfW0GSOc6RyUAMcvDosnVK7gKL1ALZ",
@@ -32269,7 +32357,10 @@
 		],
 		"romanizedTitle": "shinu na !",
 		"romanizedArtist": "kotchi noke n to",
-		"romanizedDesigner": "Luxizhel , roshie @ pengin"
+		"romanizedDesigner": "Luxizhel , roshie @ pengin",
+		"communityNames": [
+			"shinuna"
+		]
 	},
 	{
 		"id": "1WLeud5-T4XCOjp0rg84Q6zhz-hA2cZmX",
@@ -32286,7 +32377,10 @@
 		],
 		"romanizedTitle": "donguri GAME",
 		"romanizedArtist": "kotchi noke n to",
-		"romanizedDesigner": "safua futo , happi "
+		"romanizedDesigner": "safua futo , happi ",
+		"communityNames": [
+			"donguri game"
+		]
 	},
 	{
 		"id": "1KUIH4ECHZt_6hTg9AmxsL5p0Mls3A1lU",
@@ -32303,7 +32397,10 @@
 		],
 		"romanizedTitle": "kimi datsu ta kara",
 		"romanizedArtist": "nakano ka no itsutsu ko",
-		"romanizedDesigner": "safua futo , Luxizhel"
+		"romanizedDesigner": "safua futo , Luxizhel",
+		"communityNames": [
+			"kimidattakara"
+		]
 	},
 	{
 		"id": "1Mf1JUPIFSqlOpjBDcPawJo7tnBhwLjTJ",
@@ -32327,7 +32424,7 @@
 		"title": "Bring it on",
 		"artist": "ROF-MAO",
 		"designer": "ロシェ@ペンギン,Luxizhel",
-		"releaseDate": "2025-09-18",
+		"releaseDate": null,
 		"levels": [
 			"3",
 			"6",
@@ -32342,7 +32439,7 @@
 		"title": "モニタリング",
 		"artist": "DECO*27",
 		"designer": "Jack,緑風 犬三郎,カマボコ君",
-		"releaseDate": "2025-09-18",
+		"releaseDate": null,
 		"levels": [
 			"3",
 			"6",
@@ -32351,7 +32448,10 @@
 			"13"
 		],
 		"romanizedTitle": "monitaringu",
-		"romanizedDesigner": "Jack , ryokufu inu san ro , kamaboko kun"
+		"romanizedDesigner": "Jack , ryokufu inu san ro , kamaboko kun",
+		"communityNames": [
+			"Monitoring"
+		]
 	},
 	{
 		"id": "1ECsvFOo_hmVMio7Roep5WiTuLWbnnoYV",
@@ -32369,7 +32469,10 @@
 		],
 		"romanizedTitle": "tetorisu",
 		"romanizedArtist": "hiiragi magunetaito",
-		"romanizedDesigner": "safua futo , ryokufu inu san ro , Luxizhel"
+		"romanizedDesigner": "safua futo , ryokufu inu san ro , Luxizhel",
+		"communityNames": [
+			"Tetoris"
+		]
 	},
 	{
 		"id": "1b0xJMINkO3YebqYjkpi6Hinj12SflxbR",
@@ -32377,7 +32480,7 @@
 		"title": "有頂天ドリーマーズ",
 		"artist": "森羅万象",
 		"designer": "Luxizhel,Jack",
-		"releaseDate": "2025-09-18",
+		"releaseDate": null,
 		"levels": [
 			"4",
 			"7",
@@ -32385,7 +32488,10 @@
 			"13"
 		],
 		"romanizedTitle": "uchoten dorimazu",
-		"romanizedArtist": "shinrabansho"
+		"romanizedArtist": "shinrabansho",
+		"communityNames": [
+			"Uchouten Dreamers"
+		]
 	},
 	{
 		"id": "1b-5xd-7G3Z3kyPLj--D4auWP3H4wL-9u",
@@ -32416,7 +32522,12 @@
 			"14"
 		],
 		"romanizedTitle": "nirub no shinzo",
-		"romanizedDesigner": "Luxizhel , safua futoshi"
+		"romanizedDesigner": "Luxizhel , safua futoshi",
+		"communityNames": [
+			"tower of nirv",
+			"the tower of nirv",
+			"nirv"
+		]
 	},
 	{
 		"id": "1EFK9Zj-LwmXap3crxpWBYw24VG8s6g7V",
@@ -32424,7 +32535,7 @@
 		"title": "サイエンス",
 		"artist": "MIMI",
 		"designer": "はっぴー,サファ太",
-		"releaseDate": "2025-09-18",
+		"releaseDate": null,
 		"levels": [
 			"4",
 			"7+",
@@ -32432,7 +32543,10 @@
 			"13"
 		],
 		"romanizedTitle": "saiensu",
-		"romanizedDesigner": "happi , safua futoshi"
+		"romanizedDesigner": "happi , safua futoshi",
+		"communityNames": [
+			"science"
+		]
 	},
 	{
 		"id": "1Nu4qVRkYyY7-TvCEuFjew--QCxF7iTsa",
@@ -32520,13 +32634,16 @@
 		],
 		"romanizedTitle": "enjieru dorimu",
 		"romanizedArtist": "\" taiko no tatsujin \" yori",
-		"romanizedDesigner": "Luxizhel , safua futoshi"
+		"romanizedDesigner": "Luxizhel , safua futoshi",
+		"communityNames": [
+			"Angel Dream"
+		]
 	},
 	{
 		"id": "1Pxk-1qHq8zv2LlBPNHggsY8kzs7mznvF",
 		"zetarakuId": "Hurtling Boys",
 		"title": "Hurtling Boys",
-		"artist": "さだきち イシカダス「太鼓の達人」より",
+		"artist": "さだきち「太鼓の達人」より",
 		"designer": "サファ太,鳩ホルダー",
 		"releaseDate": "2025-09-26",
 		"levels": [
@@ -32535,7 +32652,7 @@
 			"12+",
 			"14"
 		],
-		"romanizedArtist": "sada kichi ishikadasu \" taiko no tatsujin \" yori",
+		"romanizedArtist": "sada kichi \" taiko no tatsujin \" yori",
 		"romanizedDesigner": "safua futo , hato horuda"
 	},
 	{
@@ -32553,7 +32670,10 @@
 		],
 		"romanizedTitle": "shi yu ~ shin ? henshin ☆ hakaishin zzZ",
 		"romanizedArtist": "YOFUKASHi Sound Team feat . hen i umo",
-		"romanizedDesigner": "amaririsu , safua futoshi"
+		"romanizedDesigner": "amaririsu , safua futoshi",
+		"communityNames": [
+			"shushin"
+		]
 	},
 	{
 		"id": "1gHVG0JuV_76JuOrxMw9VwozAGW14dWVT",
@@ -32570,7 +32690,12 @@
 		],
 		"romanizedTitle": "inochi tesutesu",
 		"romanizedArtist": "paripari sarau don",
-		"romanizedDesigner": "Jack , happi "
+		"romanizedDesigner": "Jack , happi ",
+		"communityNames": [
+			"inochi testes",
+			"inochi tesutesu",
+			"inochi testtest"
+		]
 	},
 	{
 		"id": "1-DbTVRNaY8YnfRHvnmQ5yvPSDaOiLQDw",
@@ -32587,7 +32712,10 @@
 		],
 		"romanizedTitle": "haikei , saiko no omoide tachi",
 		"romanizedArtist": "yaregino",
-		"romanizedDesigner": "happi , Jack"
+		"romanizedDesigner": "happi , Jack",
+		"communityNames": [
+			"Dear my sweet memories"
+		]
 	},
 	{
 		"id": "1COdGFoy_XtE85qXwhSnuyAKkc7xQiBMw",
@@ -32603,7 +32731,11 @@
 			"14"
 		],
 		"romanizedTitle": "o be n ki youtaimu",
-		"romanizedDesigner": "safua futo , happi "
+		"romanizedDesigner": "safua futo , happi ",
+		"communityNames": [
+			"obenkyou time",
+			"study time"
+		]
 	},
 	{
 		"id": "1bi_EcMldgEI9KFnWGQxURc3vAOv15ogy",
@@ -32620,7 +32752,10 @@
 		],
 		"romanizedTitle": "ru ro uran ru",
 		"romanizedArtist": "chika ra",
-		"romanizedDesigner": "happi , ru shi eru"
+		"romanizedDesigner": "happi , ru shi eru",
+		"communityNames": [
+			"rurouranru"
+		]
 	},
 	{
 		"id": "11UEITBeAd0hqjwgtjNMXlWQi2OJ9qMHe",
@@ -32637,7 +32772,10 @@
 		],
 		"romanizedTitle": "haikyo ni i masu kyampen",
 		"romanizedArtist": "yoshida yoru yo feat . chikku .",
-		"romanizedDesigner": "Luxizhel , happi "
+		"romanizedDesigner": "Luxizhel , happi ",
+		"communityNames": [
+			"haikyo ni imasu campaign"
+		]
 	},
 	{
 		"id": "13onJ8LeS_peuk-fH1zdYjKpOidUEtKlZ",
@@ -32669,7 +32807,10 @@
 		],
 		"romanizedTitle": "hajimari no mirai",
 		"romanizedArtist": "40 mP × sasakure . UK / hatsune miku \" gekijo ban purojiekutosekai koware ta sekai to utae nai miku \"",
-		"romanizedDesigner": "safua futo , pichi neko"
+		"romanizedDesigner": "safua futo , pichi neko",
+		"communityNames": [
+			"hajimari no mirai"
+		]
 	},
 	{
 		"id": "1DC5P_C-tJnNuz3Ab-s0MqfhbMOXmvc-C",
@@ -32724,7 +32865,12 @@
 			"14+"
 		],
 		"romanizedArtist": "kame ri a",
-		"romanizedDesigner": "roshie @ pengin , Safari"
+		"romanizedDesigner": "roshie @ pengin , Safari",
+		"communityNames": [
+			"False Amber",
+			"False Amber (nothing is but what is not)",
+			"faftbbobaktftlaobbtsstlebn"
+		]
 	},
 	{
 		"id": "1SdlSvPpFgwmE75gm2YHjJ0Tu5Bl-JirY",
@@ -32740,7 +32886,11 @@
 			"13+"
 		],
 		"romanizedTitle": "hiasobi",
-		"romanizedArtist": "kame ri a"
+		"romanizedArtist": "kame ri a",
+		"communityNames": [
+			"hiasobi",
+			"play with fire"
+		]
 	},
 	{
 		"id": "1fvmd2HYysj7hjUMUOfHvBthJViVXjf08",
@@ -32757,7 +32907,10 @@
 		],
 		"romanizedTitle": "shinku toshi",
 		"romanizedArtist": "nanatsukaze",
-		"romanizedDesigner": "Luxizhel , safua futoshi"
+		"romanizedDesigner": "Luxizhel , safua futoshi",
+		"communityNames": [
+			"shinkuu toshi"
+		]
 	},
 	{
 		"id": "1VoAdLhZYYydQdeFchqJ1GPzmhgPXWRjg",
@@ -32789,7 +32942,10 @@
 		],
 		"romanizedTitle": "papapara bichi",
 		"romanizedArtist": "papapara bichi",
-		"romanizedDesigner": "safua futo , amaririsu"
+		"romanizedDesigner": "safua futo , amaririsu",
+		"communityNames": [
+			"papapara beach"
+		]
 	},
 	{
 		"id": "11vFebc8_UxY839DhM8cb2JAadcD84XVI",
@@ -32802,9 +32958,12 @@
 			"5",
 			"8+",
 			"12+",
-			"14"
+			"14+"
 		],
-		"romanizedDesigner": "ki yomurin , Luxizhel"
+		"romanizedDesigner": "ki yomurin , Luxizhel",
+		"communityNames": [
+			"get u back"
+		]
 	},
 	{
 		"id": "1ley_JV7Y88d-hCG6lnASJg0HrqiCtooa",
@@ -32821,7 +32980,10 @@
 		],
 		"romanizedTitle": "denko 刹 ka",
 		"romanizedArtist": "kame ri a",
-		"romanizedDesigner": "Jack , happi "
+		"romanizedDesigner": "Jack , happi ",
+		"communityNames": [
+			"denkoh sekka"
+		]
 	},
 	{
 		"id": "1mJYfnACGpa1i7YiYZg7qsshfk-2lPa97",
@@ -32838,7 +33000,10 @@
 		],
 		"romanizedTitle": "uiapikopikohammazu !!!!",
 		"romanizedArtist": "cosMo @ boso P",
-		"romanizedDesigner": "Luxizhel , safua futoshi"
+		"romanizedDesigner": "Luxizhel , safua futoshi",
+		"communityNames": [
+			"we are picopico hammers"
+		]
 	},
 	{
 		"id": "1mlmBvou6YwXsaDvHfXCO1OLST2zH3lCN",
@@ -32855,7 +33020,10 @@
 		],
 		"romanizedTitle": "jietto burakku",
 		"romanizedArtist": "yu no suke",
-		"romanizedDesigner": "happi , ja ko remon"
+		"romanizedDesigner": "happi , ja ko remon",
+		"communityNames": [
+			"jet black"
+		]
 	},
 	{
 		"id": "1Ia1jrTw4IwqGx11qozbIaiawT68qhWBZ",
@@ -32871,7 +33039,10 @@
 			"13+"
 		],
 		"romanizedTitle": "torejagaden",
-		"romanizedDesigner": "Luxizhel , amaririsu"
+		"romanizedDesigner": "Luxizhel , amaririsu",
+		"communityNames": [
+			"treasure garden"
+		]
 	},
 	{
 		"id": "1MGfmO4BB8ZUZ4LlSGVG-Xib7BhEPTEdX",
@@ -32888,7 +33059,10 @@
 		],
 		"romanizedTitle": "saiai jinsei ranna",
 		"romanizedArtist": "kairi ki bea",
-		"romanizedDesigner": "safua futo , Luxizhel"
+		"romanizedDesigner": "safua futo , Luxizhel",
+		"communityNames": [
+			"saiai jinsei Runner"
+		]
 	},
 	{
 		"id": "17EEJ8DjUE5nQBNk-OY6y2TBSpXiPLAQn",
@@ -32947,7 +33121,10 @@
 		],
 		"romanizedTitle": "rasuto pisu ni shukufuku to eiko o",
 		"romanizedArtist": "cosMo @ boso P",
-		"romanizedDesigner": "Jack , se men tomori"
+		"romanizedDesigner": "Jack , se men tomori",
+		"communityNames": [
+			"Last Piece"
+		]
 	},
 	{
 		"id": "118tpyLnA86yl6Vy66TOSl4uSt8EfIgv1",
@@ -32964,7 +33141,11 @@
 		],
 		"romanizedTitle": "hatsune miku no boso",
 		"romanizedArtist": "cosMo @ boso P",
-		"romanizedDesigner": "happi , safua futoshi"
+		"romanizedDesigner": "happi , safua futoshi",
+		"communityNames": [
+			"hatsune miku no bousou",
+			"bousou"
+		]
 	},
 	{
 		"id": "10z7k03Y_Y76fWPb-lGc9xFXMaYASGHYV",
@@ -32981,7 +33162,10 @@
 		],
 		"romanizedTitle": "Let ' s mikusasaizu ! !",
 		"romanizedArtist": "cosMo @ boso P \" Fit Boxing feat . hatsune miku - miku to issho ni ekusasaizu -\"",
-		"romanizedDesigner": "safua futo , happi "
+		"romanizedDesigner": "safua futo , happi ",
+		"communityNames": [
+			"Let's mixercise"
+		]
 	},
 	{
 		"id": "1_L9ujc6ot_SX5p3VYXidv9IRznH7thXP",
@@ -32998,7 +33182,10 @@
 		],
 		"romanizedTitle": "miku mari",
 		"romanizedArtist": "tezuka",
-		"romanizedDesigner": "happi , amaririsu"
+		"romanizedDesigner": "happi , amaririsu",
+		"communityNames": [
+			"mikumari"
+		]
 	},
 	{
 		"id": "1cwkX0tuf1h9QD2Ze5uz_mDyq2lwTLknR",
@@ -33030,7 +33217,10 @@
 			"14"
 		],
 		"romanizedTitle": "kijo beni 妖",
-		"romanizedDesigner": "Luxizhel , safua futoshi"
+		"romanizedDesigner": "Luxizhel , safua futoshi",
+		"communityNames": [
+			"kijokouyou"
+		]
 	},
 	{
 		"id": "1ia-xiWs1BIbO2WQPkfmwwh47TW1gA5NF",
@@ -33046,7 +33236,11 @@
 			"14"
 		],
 		"romanizedTitle": "hana amatsuki usagi",
-		"romanizedDesigner": "Jack , happi "
+		"romanizedDesigner": "Jack , happi ",
+		"communityNames": [
+			"katengetto",
+			"curtain get"
+		]
 	},
 	{
 		"id": "1IX2YVg0fK0f6MlvaSvYeYfJXMhDyePJj",
@@ -33061,7 +33255,11 @@
 			"9+",
 			"13"
 		],
-		"romanizedTitle": "sunoman ( Rerec )"
+		"romanizedTitle": "sunoman ( Rerec )",
+		"communityNames": [
+			"snowman",
+			"snowman rerec"
+		]
 	},
 	{
 		"id": "1TW3G-Xzi1ssnx7TJ5VoSWzyhInpA7mJR",
@@ -33093,7 +33291,10 @@
 		],
 		"romanizedTitle": "yami nabe !!!!",
 		"romanizedArtist": "cosMo @ boso P",
-		"romanizedDesigner": "happi , safua futoshi"
+		"romanizedDesigner": "happi , safua futoshi",
+		"communityNames": [
+			"yaminabe"
+		]
 	},
 	{
 		"id": "1f_WkiGxxpGJaG0GTsSisrj6nVaxw8uX7",
@@ -33146,7 +33347,11 @@
 		],
 		"romanizedTitle": "mimuka ｩ wa naisu torai",
 		"romanizedArtist": "nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu nu",
-		"romanizedDesigner": "happi , pichi neko"
+		"romanizedDesigner": "happi , pichi neko",
+		"communityNames": [
+			"mimukawa nice try",
+			"mimukauwa nice try"
+		]
 	},
 	{
 		"id": "1Acbt2XMiild1yE4TEXf_MllKRdl7PcbD",
@@ -33163,7 +33368,10 @@
 		],
 		"romanizedTitle": "bake no hana",
 		"romanizedArtist": "naki so",
-		"romanizedDesigner": "amaririsu , safua futoshi"
+		"romanizedDesigner": "amaririsu , safua futoshi",
+		"communityNames": [
+			"bake no hana"
+		]
 	},
 	{
 		"id": "1Pe2oiyCS2No68W_FnGeRHiJSEtGPuGJa",
@@ -33180,7 +33388,10 @@
 		],
 		"romanizedTitle": "ui mugibatake de tsukamae te",
 		"romanizedArtist": "shigure ui",
-		"romanizedDesigner": "o sorotchi nu , Luxizhel"
+		"romanizedDesigner": "o sorotchi nu , Luxizhel",
+		"communityNames": [
+			"Ui mugibatake de tsukamaete"
+		]
 	},
 	{
 		"id": "1yve_rCpkg_Zm8ZlG-rOWb_P454wJC4Fc",
@@ -33197,7 +33408,10 @@
 		],
 		"romanizedTitle": "katte ni iki masho",
 		"romanizedArtist": "shigure ui",
-		"romanizedDesigner": "safua futo , Jack"
+		"romanizedDesigner": "safua futo , Jack",
+		"communityNames": [
+			"Katte ni ikimasho"
+		]
 	},
 	{
 		"id": "1y_AM1vsVXP8hNW0bYXPZtoJbT7a-pMgR",
@@ -33214,7 +33428,10 @@
 		],
 		"romanizedTitle": "aiai kasa",
 		"romanizedArtist": "hamu feat . ame koromo",
-		"romanizedDesigner": "Luxizhel , ki yomurin & happi "
+		"romanizedDesigner": "Luxizhel , ki yomurin & happi ",
+		"communityNames": [
+			"Aiaigasa"
+		]
 	},
 	{
 		"id": "1yQeFl4MpgOTpXEMQWS8zQlCOyjzfZ7oP",
@@ -33229,7 +33446,10 @@
 			"9+",
 			"13"
 		],
-		"romanizedDesigner": "happi , happi ( INFP )"
+		"romanizedDesigner": "happi , happi ( INFP )",
+		"communityNames": [
+			"mbti"
+		]
 	},
 	{
 		"id": "1i7TZdgwE8OGPVdNEEnwjOxXnJXQk0qwc",
@@ -33315,7 +33535,10 @@
 			"13+"
 		],
 		"romanizedTitle": "kocho 乃 mai",
-		"romanizedDesigner": "happi , ja ko remon"
+		"romanizedDesigner": "happi , ja ko remon",
+		"communityNames": [
+			"kochou no mai"
+		]
 	},
 	{
 		"id": "1-WsGdHd40MBlzUsF9_wSNQfgv9tzVSHJ",
@@ -33331,7 +33554,17 @@
 			"14+"
 		],
 		"romanizedTitle": "rei 號 sharyo",
-		"romanizedDesigner": "safua futo , happi "
+		"romanizedDesigner": "safua futo , happi ",
+		"communityNames": [
+			"train zero",
+			"train no 0",
+			"train 0",
+			"train number 0",
+			"train no zero",
+			"train number zero",
+			"vehicle zero",
+			"zero train"
+		]
 	},
 	{
 		"id": "1F87BLMOM0AorvN1_ht0bOEDMS0r_MPhQ",
@@ -33347,7 +33580,10 @@
 			"13"
 		],
 		"romanizedTitle": "suroguro",
-		"romanizedDesigner": "Luxizhel , roshie @ pengin"
+		"romanizedDesigner": "Luxizhel , roshie @ pengin",
+		"communityNames": [
+			"slow glow"
+		]
 	},
 	{
 		"id": "1kM_voYljOl7EpORKntlLBMaZJOAtV0fa",
@@ -33410,7 +33646,10 @@
 			"12+"
 		],
 		"romanizedTitle": "rapurasu shokora",
-		"romanizedDesigner": "Luxizhel , happi "
+		"romanizedDesigner": "Luxizhel , happi ",
+		"communityNames": [
+			"Laplace chocolat"
+		]
 	},
 	{
 		"id": "1uZ_g3jgzkzLKrd3jq9ydPmxkDST1gTQm",
@@ -33427,7 +33666,11 @@
 		],
 		"romanizedTitle": "koi no hyoketsu o ten ba yukemuri chiruno onsen",
 		"romanizedArtist": "uno× yu no yoshimi feat . miko",
-		"romanizedDesigner": "roshie @ pengin , Luxizhel"
+		"romanizedDesigner": "roshie @ pengin , Luxizhel",
+		"communityNames": [
+			"cirno onsen",
+			"Koi no Hyoketsu Otenba Yukemuri Cirno Onsen"
+		]
 	},
 	{
 		"id": "1BYKaTkafa-4mzEbODZR4UJdNmjYYd-Zi",
@@ -33444,7 +33687,11 @@
 		],
 		"romanizedTitle": "ita den wa yame te ! boku ra no sukaretto ･ koru",
 		"romanizedArtist": "nana jo retasu gurupu",
-		"romanizedDesigner": "safua futo , happi "
+		"romanizedDesigner": "safua futo , happi ",
+		"communityNames": [
+			"scarlet call",
+			"Itaden ha Yamete! Bokura no Scarlet Call"
+		]
 	},
 	{
 		"id": "1pwsrvLUEbI7VtNrzuWUx7kUD1_JwJ_0G",
@@ -33461,6 +33708,667 @@
 		],
 		"romanizedTitle": "mushi mi ko nya no happippi",
 		"romanizedArtist": "ARM× kitsune muso feat . miko× yamamoto momiji",
-		"romanizedDesigner": "safua futo , ja ko remon"
+		"romanizedDesigner": "safua futo , ja ko remon",
+		"communityNames": [
+			"Mushi Miko Unya no Happypy",
+			"mushi miko"
+		]
+	},
+	{
+		"id": "1CG5l1rfNtjvBMc8fzda2f-DozBxJ6HwP",
+		"zetarakuId": "7 Wonders",
+		"title": "7 Wonders",
+		"artist": "削除",
+		"designer": "サファ太,KOP7th -FiNAL BATTLE- by 7.3GHz",
+		"releaseDate": "2026-03-05",
+		"levels": [
+			"6",
+			"8",
+			"12+",
+			"14+"
+		],
+		"romanizedArtist": "sakujo",
+		"romanizedDesigner": "safua futo , KOP 7 th - FiNAL BATTLE - by 7 . 3 GHz"
+	},
+	{
+		"id": "1QSSv_qLhVlzD5L4LmAtgQNmmiN9Brvvm",
+		"zetarakuId": "WakeUP MakeUP FEVER!",
+		"title": "WakeUP MakeUP FEVER!",
+		"artist": "曲：アオワイファイ／歌：オンゲキシューターズ",
+		"designer": "Luxizhel,アマリリス",
+		"releaseDate": "2026-03-05",
+		"levels": [
+			"2",
+			"6",
+			"10",
+			"13"
+		],
+		"romanizedArtist": "kyoku : aowaifuai / uta : ongekishutazu",
+		"romanizedDesigner": "Luxizhel , amaririsu"
+	},
+	{
+		"id": "1TIkbuI4qH2BplOlvi80Ueyl43Y23Oblo",
+		"zetarakuId": "give it up to you",
+		"title": "give it up to you",
+		"artist": "曲：中土智博／歌：bitter flavor [桜井 春菜(CV：近藤 玲奈)、早乙女 彩華(CV：中島 唯)]",
+		"designer": "サファ太,せめんともり",
+		"releaseDate": "2026-03-05",
+		"levels": [
+			"3",
+			"7",
+			"10+",
+			"13"
+		],
+		"romanizedArtist": "kyoku : nakatsuchi tomohiro / uta : bitter flavor [ sakurai haruna ( CV : kondo rena ), saotome ayaka ( CV : nakajima tada )]",
+		"romanizedDesigner": "safua futo , se men tomori"
+	},
+	{
+		"id": "1rI4QEx4CJMuU0C9Rljv9eRp7qZ42WF2V",
+		"zetarakuId": "ICEBURN",
+		"title": "ICEBURN",
+		"artist": "Srav3R",
+		"designer": "サファ太,カマボコ君",
+		"releaseDate": "2026-03-05",
+		"levels": [
+			"4",
+			"8",
+			"11",
+			"13+"
+		],
+		"romanizedDesigner": "safua futo , kamaboko kun"
+	},
+	{
+		"id": "1VmhhImgEFwQo_9fTV9oIxIoIW03zXC7h",
+		"zetarakuId": "KNØCK ØUT!!",
+		"title": "KNØCK ØUT!!",
+		"artist": "DIVELA feat.ラングドシャ",
+		"designer": "Luxizhel,サファ太",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"7+",
+			"11",
+			"13+"
+		],
+		"romanizedArtist": "DIVELA feat . rangudosha",
+		"romanizedDesigner": "Luxizhel , safua futoshi",
+		"communityNames": [
+			"Knock out"
+		]
+	},
+	{
+		"id": "1iPtd-A5yz5nkVfBxDGw3Hy2w-U3SiYrc",
+		"zetarakuId": "Aides",
+		"title": "Aides",
+		"artist": "tokiwa×むﾄ",
+		"designer": "サファ太,Luxizhel",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"7+",
+			"10+",
+			"13+"
+		],
+		"romanizedArtist": "tokiwa× mu ﾄ",
+		"romanizedDesigner": "safua futo , Luxizhel"
+	},
+	{
+		"id": "1YL-Sf8f_YweAV--Y67FJHllnDB1wNp-p",
+		"zetarakuId": "Treasure Chest Expedition",
+		"title": "Treasure Chest Expedition",
+		"artist": "7mai",
+		"designer": "アマリリス,せめんともり",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"5",
+			"8+",
+			"11",
+			"13+"
+		],
+		"romanizedDesigner": "amaririsu , se men tomori",
+		"communityNames": [
+			"tce"
+		]
+	},
+	{
+		"id": "1PRMlI9M47mNGQ0WOTEZnYFX_K4E3KbFc",
+		"zetarakuId": "ソテリア",
+		"title": "ソテリア",
+		"artist": "Rafutsuri feat.桜あおい",
+		"designer": "シチミヘルツ,サファ太",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"8",
+			"12",
+			"14"
+		],
+		"romanizedTitle": "soteria",
+		"romanizedArtist": "Rafutsuri feat . sakura aoi",
+		"romanizedDesigner": "shichimiherutsu , safua futoshi",
+		"communityNames": [
+			"sotelia",
+			"soteria"
+		]
+	},
+	{
+		"id": "1egFSq5OeBCmvP6kcc6VLxz2ZTcHo5LB3",
+		"zetarakuId": "TECHNOPOLIS 2085",
+		"title": "TECHNOPOLIS 2085",
+		"artist": "PRASTIK DANCEFLOOR",
+		"designer": "アマリリス,シチミヘルツ",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"6",
+			"10+",
+			"13+"
+		],
+		"romanizedDesigner": "amaririsu , shichimiherutsu",
+		"communityNames": [
+			"technopolis"
+		]
+	},
+	{
+		"id": "1UcSd7MFe3DvbRqtibX34eELuwR5_kR-a",
+		"zetarakuId": "Galaxy Blaster",
+		"title": "Galaxy Blaster",
+		"artist": "ああああ",
+		"designer": "Luxizhel,サファ太",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"5",
+			"7+",
+			"11",
+			"14"
+		],
+		"romanizedArtist": "a a",
+		"romanizedDesigner": "Luxizhel , safua futoshi"
+	},
+	{
+		"id": "1NIIoFjEwHi5ZlnN1RqxjMM09Utk72ujo",
+		"zetarakuId": "無敵的ハピネス！(SOS団5人Ver.)",
+		"title": "無敵的ハピネス！(SOS団5人Ver.)",
+		"artist": "涼宮ハルヒ(CV.平野綾),長門有希(CV.茅原実里),朝比奈みくる(CV.後藤邑子)、キョン(CV.杉田智和)、古泉一樹(CV.小野大輔)",
+		"designer": "せめんともり,きょむりん",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"3",
+			"7",
+			"10",
+			"13"
+		],
+		"romanizedTitle": "muteki teki hapinesu !( SOS dan 5 nin Ver .)",
+		"romanizedArtist": "ryo miya haruhi ( CV . heiya aya ), nagato yuki ( CV . chihara misato ), asahina mi kuru ( CV . go fujimura ko ), kyon ( CV . sugita tomokazu ), koizumi kazuki ( CV . ono daisuke )",
+		"romanizedDesigner": "semen tomori , ki yomurin",
+		"communityNames": [
+			"mutekideki happiness",
+			"invinsibleish happiness"
+		]
+	},
+	{
+		"id": "1uaA5tNto1hAtmveng0s-B5hqKcoXIGs6",
+		"zetarakuId": "Chasing destiny",
+		"title": "Chasing destiny",
+		"artist": "涼宮ハルヒ(CV.平野綾)",
+		"designer": "はっぴー,サファ太",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"7+",
+			"10+",
+			"13+"
+		],
+		"romanizedArtist": "ryo miya haruhi ( CV . heiya aya )",
+		"romanizedDesigner": "happi , safua futoshi"
+	},
+	{
+		"id": "1wl8YOdAI-OVkaSdjJBVYOycPWVqWzUgs",
+		"zetarakuId": "Colorful Starting Line",
+		"title": "Colorful Starting Line",
+		"artist": "涼宮ハルヒ(CV.平野綾)",
+		"designer": "サファ太,せめんともり & カマボコ君",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"3",
+			"7",
+			"10",
+			"13"
+		],
+		"romanizedArtist": "ryo miya haruhi ( CV . heiya aya )",
+		"romanizedDesigner": "safua futo , se men tomori & kamaboko kun"
+	},
+	{
+		"id": "1PoH8DuhAIjig25hrtRWRhpU4uj9IbQwZ",
+		"zetarakuId": "愛♡スクリ～ム！",
+		"title": "愛♡スクリ～ム！",
+		"artist": "AiScReam[黒澤ルビィ(CV.降幡 愛)、上原歩夢(CV.大西亜玖璃)、若菜四季(CV.大熊和奏)]",
+		"designer": "まぐランド,緑風 犬三郎,ぴちネコ",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"2",
+			"6",
+			"9",
+			"11",
+			"13"
+		],
+		"romanizedTitle": "ai ♡ sukuri ~ mu !",
+		"romanizedArtist": "AiScReam [ kurosawa rubii ( CV . kuda hata ai ), uehara ayumi yume ( CV . onishi a 玖 璃 ), wakana shiki ( CV . okuma kazu so )]",
+		"romanizedDesigner": "ma gu rando , ryokufu inu san ro , pichi neko",
+		"communityNames": [
+			"aiscream"
+		]
+	},
+	{
+		"id": "1ReCY9mx_WTiUijbVGovvc91Vi8pXEOmD",
+		"zetarakuId": "テレパシ",
+		"title": "テレパシ",
+		"artist": "DECO*27",
+		"designer": "サファ太,はっぴー",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"7+",
+			"10+",
+			"13"
+		],
+		"romanizedTitle": "terepashi",
+		"romanizedDesigner": "safua futo , happi ",
+		"communityNames": [
+			"telepathy"
+		]
+	},
+	{
+		"id": "1hNgkHWl0Y8JKXXSRdo0ThVnq8lE9P0YW",
+		"zetarakuId": "ダイダイダイダイダイキライ",
+		"title": "ダイダイダイダイダイキライ",
+		"artist": "雨良 Amala",
+		"designer": "Jack,緑風　犬三郎,サファ太",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"6",
+			"10",
+			"11+",
+			"13+"
+		],
+		"romanizedTitle": "daidaidaidaidaikirai",
+		"romanizedArtist": "ame ryo Amala",
+		"romanizedDesigner": "Jack , ryokufu inu san ro , safua futoshi",
+		"communityNames": [
+			"daidaidaidaidaikirai dai5kirai"
+		]
+	},
+	{
+		"id": "1g43D_CELxphE3hSZ5wOFLHAsssG4svtL",
+		"zetarakuId": "オペラ！スペースオペラ！",
+		"title": "オペラ！スペースオペラ！",
+		"artist": "ナユタン星人",
+		"designer": "Luxizhel,はっぴー",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"7",
+			"10+",
+			"13"
+		],
+		"romanizedTitle": "opera ! supesu opera !",
+		"romanizedArtist": "nayutan boshi jin",
+		"romanizedDesigner": "Luxizhel , happi ",
+		"communityNames": [
+			"opera space opera"
+		]
+	},
+	{
+		"id": "1KpgbK4hA1RLaJOm6M46cyb9uETco0vxl",
+		"zetarakuId": "T氏の話を信じるな",
+		"title": "T氏の話を信じるな",
+		"artist": "ピノキオピー",
+		"designer": "サファ太,Luxizhel",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"3",
+			"6",
+			"9+",
+			"13"
+		],
+		"romanizedTitle": "T shi no hanashi o shinjiru na",
+		"romanizedArtist": "pinokiopi",
+		"romanizedDesigner": "safua futo , Luxizhel",
+		"communityNames": [
+			"t san",
+			"Don't Believe in T",
+			"T san no hanashi wo shinjiruna"
+		]
+	},
+	{
+		"id": "1Eo-SqhZtGU0L34751vo8w05851TBU-Dd",
+		"zetarakuId": "超ナイト・オブ・ナイツ",
+		"title": "超ナイト・オブ・ナイツ",
+		"artist": "ビートまりお×まろん",
+		"designer": "せめんともり,アマリリス",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"7+",
+			"11+",
+			"14"
+		],
+		"romanizedTitle": "cho naito･obu･naitsu",
+		"romanizedArtist": "bito mari o × maron",
+		"romanizedDesigner": "semen tomori , amaririsu",
+		"communityNames": [
+			"cho nok",
+			"cho night of knights",
+			"cho knight of nights"
+		]
+	},
+	{
+		"id": "1rxmqwyEB9N_kCl8_2z9iMLMwaL4YDs1k",
+		"zetarakuId": "浮世絵横丁",
+		"title": "浮世絵横丁",
+		"artist": "魔界都市ニイガタ（黄泉路テヂーモ×dawn-system×かゆき）",
+		"designer": "アマリリス,Jack",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"4",
+			"7",
+			"11",
+			"13+"
+		],
+		"romanizedTitle": "ukiyoe yokocho",
+		"romanizedArtist": "makai toshi niigata ( yomiji tejimo × dawn - system× kayuki )",
+		"romanizedDesigner": "amaririsu , Jack",
+		"communityNames": [
+			"ukiyoe",
+			"ukiyoe yokochou"
+		]
+	},
+	{
+		"id": "1eBtMlhorAv8XELKVETg-KoEYH5AHusTN",
+		"zetarakuId": "AiAe",
+		"title": "AiAe",
+		"artist": "DJ'TEKINA//SOMETHING a.k.a ゆよゆっぺ",
+		"designer": "サファ太",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"5",
+			"8",
+			"12",
+			"14"
+		],
+		"romanizedArtist": "DJ ' TEKINA // SOMETHING a . k . a yu yo yuuundefined",
+		"romanizedDesigner": "safua futoshi"
+	},
+	{
+		"id": "1ocEezf0M10staaElDM3uB72ITJ5jY2HF",
+		"zetarakuId": "[習]からくりピエロ",
+		"title": "[撫] からくりピエロ",
+		"artist": "40mP",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"11?"
+		],
+		"romanizedTitle": "[ 撫 ] karakuri piero"
+	},
+	{
+		"id": "1j3qs8Ugun6hVV-1C55eWLU_RtI6_1_lm",
+		"zetarakuId": "[習]からくりピエロ",
+		"title": "[習] からくりピエロ",
+		"artist": "40mP",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"11?"
+		],
+		"romanizedTitle": "[ 習 ] karakuri piero"
+	},
+	{
+		"id": "120vqphaQ3nlNi5Z2Gkv_Is9evgDUs5xp",
+		"zetarakuId": "[破]テレパシ",
+		"title": "[破] テレパシ",
+		"artist": "DECO*27",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"14?"
+		],
+		"romanizedTitle": "[ yabu ] terepashi"
+	},
+	{
+		"id": "1U8081DIgRUPadjpQGi-H09hBNzp0TMOA",
+		"zetarakuId": "[奏]クレイジークレイジーダンサーズ",
+		"title": "[奏] クレイジークレイジーダンサーズ [1P]",
+		"artist": "ビートまりお＋あまね（COOL&CREATE）",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"13?"
+		],
+		"romanizedTitle": "[ so ] kureijikureijidansazu [ 1 P ]",
+		"romanizedArtist": "bito mari o + ama ne ( COOL & CREATE )"
+	},
+	{
+		"id": "1hvH8b287_qsmHybN0gQ1Lpohxjfges5d",
+		"zetarakuId": "[奏]クレイジークレイジーダンサーズ",
+		"title": "[奏] クレイジークレイジーダンサーズ [2P]",
+		"artist": "ビートまりお＋あまね（COOL&CREATE）",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"13?"
+		],
+		"romanizedTitle": "[ so ] kureijikureijidansazu [ 2 P ]",
+		"romanizedArtist": "bito mari o + ama ne ( COOL & CREATE )"
+	},
+	{
+		"id": "1Sht073YSQ2VjbsmVuiqrJQ85IazuZf6_",
+		"zetarakuId": "[音]On your mark (104期 Ver.)",
+		"title": "[音] On your mark (104期 Ver.)",
+		"artist": "蓮ノ空女学院スクールアイドルクラブ",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"13+?"
+		],
+		"romanizedTitle": "[ on ] On your mark ( 104 ki Ver .)",
+		"romanizedArtist": "hachisu no sora jogakuin sukuru aidoru kurabu"
+	},
+	{
+		"id": "1dDjOZZl0kmMFX4IsTWCsEt_E-OQFurGa",
+		"zetarakuId": "[音]テトリス",
+		"title": "[音]テトリス",
+		"artist": "柊マグネタイト",
+		"releaseDate": "2026-03-19",
+		"levels": [
+			"13?"
+		],
+		"romanizedTitle": "[ on ] tetorisu",
+		"romanizedArtist": "hiiragi magunetaito"
+	},
+	{
+		"id": "1AfWR6sUvSRb9NFP6UNQnnlwPa97szKuA",
+		"zetarakuId": "キミは“見ていたね”？",
+		"title": "キミは“見ていたね”？",
+		"artist": "曲：篠崎あやと、橘亮祐／歌：結城 莉玖(CV：朝日奈 丸佳)、東雲 つむぎ(CV：和泉 風花)",
+		"designer": "はっぴー,サファ太",
+		"releaseDate": "2026-04-01",
+		"levels": [
+			"3",
+			"6",
+			"10",
+			"13"
+		],
+		"romanizedTitle": "kimi wa \" mi te i ta ne \" ?",
+		"romanizedArtist": "kyoku : shinozaki aya to , tachibana akira yu / uta : yuki 莉 玖 ( CV : asahina maru kei ), shinonome tsumugi ( CV : izumi kazabana )",
+		"romanizedDesigner": "happi , safua futoshi"
+	},
+	{
+		"id": "1buqQAgJHVqrvSn6qiN1IaIaUk5q82QRv",
+		"zetarakuId": "奇々解体",
+		"title": "奇々解体",
+		"artist": "MURASAKI feat.かたたかんな",
+		"designer": "廻屋渉",
+		"releaseDate": "2026-04-01",
+		"levels": [
+			"3",
+			"6",
+			"9+",
+			"13"
+		],
+		"romanizedTitle": "ki 々 kaitai",
+		"romanizedArtist": "MURASAKI feat . ka tataka n na",
+		"romanizedDesigner": "mawari ya wataru"
+	},
+	{
+		"id": "12PR_-IZ_nrguyiWEVZLv0P3CcQ7_oilt",
+		"zetarakuId": "Break The Speakers",
+		"title": "Break The Speakers",
+		"artist": "DJ Myosuke",
+		"designer": "ロシェ@ペンギン,BELiZHEL",
+		"releaseDate": "2026-04-03",
+		"levels": [
+			"5",
+			"8+",
+			"12+",
+			"14+"
+		],
+		"romanizedDesigner": "roshie @ pengin , BELiZHEL"
+	},
+	{
+		"id": "1HRGnS-5T6gNzB8J1p8FRsQFhwZG2qBHK",
+		"zetarakuId": "雑魚",
+		"title": "雑魚",
+		"artist": "柊マグネタイト",
+		"designer": "サファ太,Luxizhel",
+		"releaseDate": "2026-04-03",
+		"levels": [
+			"2",
+			"6",
+			"10",
+			"13"
+		],
+		"romanizedTitle": "jako",
+		"romanizedArtist": "hiiragi magunetaito",
+		"romanizedDesigner": "safua futo , Luxizhel"
+	},
+	{
+		"id": "1wEQeI-z-NriiLt6kvmHnWYvYzEuXmM1z",
+		"zetarakuId": "お返事まだカナ？おじさん構文！",
+		"title": "お返事まだカナ？おじさん構文！",
+		"artist": "吉本おじさん",
+		"designer": "Luxizhel,はっぴー",
+		"releaseDate": "2026-04-03",
+		"levels": [
+			"4",
+			"7+",
+			"11",
+			"13+"
+		],
+		"romanizedTitle": "o henji mada kana ? ojisan kobun !",
+		"romanizedArtist": "yoshimoto ojisan",
+		"romanizedDesigner": "Luxizhel , happi "
+	},
+	{
+		"id": "1eKwqoZXnHJBbYFHMtXRGuvi70UhtLOp6",
+		"zetarakuId": "ZEUS",
+		"title": "ZEUS",
+		"artist": "DÉ DÉ MOUSE & KAJI",
+		"designer": "せめんともり,サファ太",
+		"releaseDate": "2026-04-03",
+		"levels": [
+			"5",
+			"8",
+			"12+",
+			"14"
+		],
+		"romanizedDesigner": "semen tomori , safua futoshi"
+	},
+	{
+		"id": "1sGZ0fdf7vYBdaNEMoZqLKIEUHgN5VW8Q",
+		"zetarakuId": "Nine Point Eight",
+		"title": "Nine Point Eight",
+		"artist": "Mili",
+		"designer": "Luxizhel,Jack",
+		"releaseDate": "2026-04-17",
+		"levels": [
+			"3",
+			"7",
+			"9+",
+			"13"
+		]
+	},
+	{
+		"id": "1yUTzV8a9xKalUOKhugkpj0EM1m_oXIgw",
+		"zetarakuId": "Myosotis",
+		"title": "Myosotis",
+		"artist": "M2U / Arranger : M2U & NICODE / Vocal : Guriri & Lucy",
+		"designer": "Luxizhel,サファ太",
+		"releaseDate": "2026-04-17",
+		"levels": [
+			"4",
+			"8+",
+			"12",
+			"14"
+		],
+		"romanizedDesigner": "Luxizhel , safua futoshi"
+	},
+	{
+		"id": "1OCeMoTQn9SngzDkLpjStLXw0Axu67Bly",
+		"zetarakuId": "ANiMA",
+		"title": "ANiMA",
+		"artist": "xi",
+		"designer": "はっぴー,Safazhel",
+		"releaseDate": "2026-04-17",
+		"levels": [
+			"6",
+			"8",
+			"12+",
+			"14+"
+		],
+		"romanizedDesigner": "happi , Safazhel"
+	},
+	{
+		"id": "1tX95UIUM_RL1AsYng9fUcNigBAjXWYBM",
+		"zetarakuId": "Operation☆DOTABATA!",
+		"title": "Operation☆DOTABATA!",
+		"artist": "Mitsukiyo「ブルーアーカイブ -Blue Archive-」",
+		"designer": "サファ太,アマリリス",
+		"releaseDate": "2026-05-01",
+		"levels": [
+			"3",
+			"6",
+			"11",
+			"13"
+		],
+		"romanizedArtist": "Mitsukiyo \" buru akaibu - Blue Archive -\"",
+		"romanizedDesigner": "safua futo , amaririsu"
+	},
+	{
+		"id": "1St5PFcobCpPl8EhUEeJDOpxn0YHA2pOM",
+		"zetarakuId": "RE Aoharu",
+		"title": "RE Aoharu",
+		"artist": "Nor「ブルーアーカイブ -Blue Archive-」",
+		"designer": "せめんともり,はっぴー",
+		"releaseDate": "2026-05-01",
+		"levels": [
+			"3",
+			"7",
+			"10+",
+			"13+"
+		],
+		"romanizedArtist": "Nor \" buru akaibu - Blue Archive -\"",
+		"romanizedDesigner": "semen tomori , happi "
+	},
+	{
+		"id": "1RR2SZ25Q-VVXkamkbSKlzJfnBmObU8Iw",
+		"zetarakuId": "Usagi Flap",
+		"title": "Usagi Flap",
+		"artist": "Nor「ブルーアーカイブ -Blue Archive-」",
+		"designer": "Luxizhel,カマボコ君",
+		"releaseDate": "2026-05-01",
+		"levels": [
+			"3",
+			"6",
+			"10",
+			"13"
+		],
+		"romanizedArtist": "Nor \" buru akaibu - Blue Archive -\"",
+		"romanizedDesigner": "Luxizhel , kamaboko kun"
 	}
 ]
